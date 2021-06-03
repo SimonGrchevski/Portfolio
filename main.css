@@ -35,6 +35,11 @@ body{
   display:block;
 }
 
+.abs 
+{
+  position: absolute;
+}
+
 /*
               Typography
 */
@@ -53,6 +58,7 @@ html{
 
 header{
   justify-content: space-between;
+  margin-bottom:3em;
 }
 
 
@@ -62,4 +68,58 @@ header{
 
 .headline-info{
   font-size: 0.9em;
+}
+
+
+/*
+              Positioning the images
+*/
+
+.wh-50
+{
+  width:50px;
+  height:50px;
+}
+.pic1
+{
+  width:100px;
+  height:100px;
+  top:3.3em;
+  right:-1em;
+  
+}
+
+.pic2
+{
+  top:8em;
+  left: 0.3em;
+}
+
+.pic3
+{
+  top:13em;
+  right:-2em;
+  transform: rotateY(300deg);
+}
+
+.pic4
+{
+  top:21em;
+  left:-0.5em;
+  width:70px;
+  height:70px;
+}
+
+.pic5
+{
+  top:23em;
+  right:0.5em;
+}
+
+.pic6
+{
+  width:30px;
+  height:30px;
+  top:22em;
+  left:6em;
 }
