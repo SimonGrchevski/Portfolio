@@ -66,6 +66,12 @@ header{
               Headline
 */
 
+.social
+{
+  width:50%;
+  margin:0 auto;
+  justify-content: space-around;
+}
 .headline-info{
   font-size: 0.9em;
 }
