@@ -14,20 +14,25 @@
 </head>
 
 <body>
-  <header class="flex pd-tp-bt">
+  <header class="main-header flex pd-tp-bt">
     <section class="welcome">
-      <h3>Welcome</h3>
+      <a href="./index.html">
+        <h3>Welcome</h3>
+      </a>
     </section>
-    <section class="menu">
+    <nav class="menu">
       <i class="fa fa-bars" aria-hidden="true"></i>
-    </section>
+    </nav>
   </header>
   <main>
-    <article class="headline pd-tp-bt">
-      <h1>
-        <span class="clr-secondary">Hey there. I’m Mariane</span><span class="clr-primary block">I’m a software
-          developer</span>
-      </h1>
+    <section class="headline pd-tp-bt">
+      <header>
+        <h1>
+          <span class="clr-secondary">Hey there. I’m Mariane</span><span class="clr-primary block">I’m a software
+            developer</span>
+        </h1>
+      </header>
+
       <section class="headline-info pd-tp-bt">
         <p>
           I can help you build a product , feature or website Look through some of my work and experience! If you like
@@ -35,21 +40,25 @@
           see and have a project you need coded, don’t hestiate to contact me.
         </p>
       </section>
-      <section class="social pd-tp-bt flex">
-        <i class="fa fa-twitter clr-secondary" aria-hidden="true"></i>
-        <i class="fa fa-linkedin clr-secondary" aria-hidden="true"></i>
-        <i class="fa fa-medium clr-secondary" aria-hidden="true"></i>
-        <i class="fa fa-github clr-secondary" aria-hidden="true"></i>
-        <i class="fa fa-angellist clr-secondary" aria-hidden="true"></i>
+      <section class="social pd-tp-bt">
+        <ul class="flex social-ul">
+          <li><a href="https://twitter.com/"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+          <li><a href="https://linkedin.com"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+          <li><a href="https://medium.com/"><i class="fa fa-medium " aria-hidden="true"></i></a></li>
+          <li><a href="https://github.com/"><i class="fa fa-github " aria-hidden="true"></i></a></li>
+          <li><a href="https://angel.co/"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
+
+        </ul>
+
       </section>
 
-      <img src="./images/pic1" alt="background image" class="abs pic1">
-      <img src="./images/pic2" alt="background image" class="abs pic2 wh-50">
-      <img src="./images/pic3" alt="background image" class="abs pic3" width="100" height="100">
-      <img src="./images/pic4" alt="background image" class="abs pic4">
-      <img src="./images/pic5" alt="background image" class="abs pic5 wh-50">
-      <img src="./images/pic6" alt="background image" class="abs pic6">
-    </article>
+      <div class="abs pic1 bg-contain"></div>
+      <div class="abs pic2 bg-contain wh-50"></div>
+      <div class="abs pic3 bg-contain"></div>
+      <div class="abs pic4 bg-contain"></div>
+      <div class="abs pic5 bg-contain wh-50"></div>
+      <div class="abs pic6 bg-contain"></div>
+    </section>
 
     <div><i data-feather="chevron-down" class="btn"></i></div>
   </main>

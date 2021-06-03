@@ -13,6 +13,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+a:visited {
+  color: inherit;
+}
 
 body {
   width: 80vw;
@@ -55,9 +67,12 @@ html {
   display: flex;
 }
 
-header {
+.main-header {
   justify-content: space-between;
   margin-bottom: 3em;
+}
+.menu:hover {
+  cursor: pointer;
 }
 
 /*
@@ -67,53 +82,70 @@ header {
 .social {
   width: 50%;
   margin: 0 auto;
-  justify-content: space-around;
+  color: #505F79;
 }
 
 .headline-info {
   font-size: 0.9em;
+  color: #172b4d;
+}
+
+.social-ul {
+  justify-content: space-between;
 }
 
 /*
-              Positioning the images
+              Positioning the background images
 */
 
 .wh-50 {
   width: 50px;
   height: 50px;
 }
+.bg-contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 .pic1 {
-  width: 100px;
-  height: 100px;
+  background-image: url(./images/pic1);
+  width: 70px;
+  height: 70px;
   top: 3.3em;
-  right: -1em;
+  right: -1.3em;
 }
 
 .pic2 {
+  background-image: url(./images/pic2);
   top: 8em;
   left: 0.3em;
 }
 
 .pic3 {
+  background-image: url(./images/pic3);
   top: 13em;
-  right: -2em;
-  transform: rotateY(300deg);
+  right: -5em;
+  height:100px;
+  width:100px;
 }
 
 .pic4 {
+  background-image:url(./images/pic4);
+  background-size: contain;
   top: 21em;
   left: -0.5em;
-  width: 70px;
-  height: 70px;
+  width:50px;
+  height:70px;
 }
 
 .pic5 {
+  background-image: url(./images/pic5);
   top: 23em;
   right: 0.5em;
 }
 
 .pic6 {
+  background-image: url(./images/pic6);
   width: 30px;
   height: 30px;
   top: 22em;
