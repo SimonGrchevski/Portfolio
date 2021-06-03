@@ -123,3 +123,15 @@ header{
   top:22em;
   left:6em;
 }
+
+
+.btn{
+
+  border:1px solid rgba(0, 0, 0, 0.192);
+  border-radius:50%;
+}
+
+.btn:hover
+{
+  border-color:black;
+}
