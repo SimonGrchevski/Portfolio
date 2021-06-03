@@ -2,8 +2,8 @@
               Globals
 */
 :root {
-  --primary:#36B37E;
-  --secondary:#172B4D;
+  --primary: #36B37e;
+  --secondary: #172B4d;
 }
 
 *,
@@ -44,7 +44,7 @@ body {
               Typography
 */
 html {
-  font-family: 'Inter',sans-serif,'Times New Roman', Times, serif;
+  font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif;
 }
 
 /*
@@ -82,6 +82,7 @@ header {
   width: 50px;
   height: 50px;
 }
+
 .pic1 {
   width: 100px;
   height: 100px;
