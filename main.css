@@ -133,7 +133,7 @@ html {
 }
 
 .pic4 {
-  background-image:url(./images/pic4);
+  background-image: url(./images/pic4);
   background-size: contain;
   top: 21em;
   left: -0.5em;
