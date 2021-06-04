@@ -2,8 +2,8 @@
 
 This project is my first Portfolio page and its mobile version.
 
-![Screenshot](./Screen Shot 1.png)
-![Screenshot](./Screen Shot 2.png)
+![Screenshot](./ScreenShot1.png)\
+![Screenshot](./ScreenShot2.png)
 
 Built With HTML5, CSS
 
@@ -19,7 +19,7 @@ Prerequisites
 
 Vs code Studio
 Authors
-bust_in_silhouette Author1
+:bust_in_silhouette: **Author1**
 
 [GitHub]( https://github.com/SimonGrchevski )
 [LinkedIn]( https://www.linkedin.com/in/simon-grchevski-682935209/ )
