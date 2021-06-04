@@ -50,8 +50,8 @@ a:visited {
   color: var(--primary);
 }
 
-.clr-bg-gray  {
-  background-color: #EBF0EE;
+.clr-bg-gray {
+  background-color: #ebf0ee;
 }
 
 .block {
@@ -233,11 +233,9 @@ html {
 .ul-skills {
   margin: 0 auto;
 }
-.ul-skills li {
-  margin: 0 0.3em;
-}
 
 .ul-skills li {
+  margin: 0 0.3em;
   font-size: 0.7em;
   padding: 3px 2px;
   border-radius: 5%;
@@ -257,6 +255,7 @@ html {
 .about-me {
   margin: 2em 0;
   position: relative;
+  height: 300px;
 }
 
 .about-me h1 {
@@ -265,7 +264,9 @@ html {
 }
 
 .btn-resume {
-  width: 60%;
+  display: inline-block;
+  width: auto !important;
+  margin-top: 1em;
 }
 
 .about-img-1 {
@@ -280,7 +281,7 @@ html {
   background-image: url(./images/about-me-pic-2);
 }
 
-#third-section {
+.third-section-cls {
   background-color: #ebf0ee;
   border-radius: 3%;
   height: 300px;
@@ -291,13 +292,14 @@ html {
   color: #344563;
 }
 
-#thid-section-ul li {
+.third-section-ul-cls li {
   padding: 0.8em 0.5em;
   margin-top: 1em;
   background-color: #fff;
   color: #36b37e;
 }
-#thid-section-ul {
+
+.third-section-ul-cls {
   flex-wrap: wrap;
   justify-content: center;
 }
