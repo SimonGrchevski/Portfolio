@@ -50,6 +50,10 @@ a:visited {
   color: var(--primary);
 }
 
+.clr-bg-gray  {
+  background-color: #EBF0EE;
+}
+
 .block {
   display: block;
 }
@@ -227,7 +231,10 @@ html {
 }
 
 .ul-skills {
-  justify-content: space-between;
+  margin: 0 auto;
+}
+.ul-skills li {
+  margin: 0 0.3em;
 }
 
 .ul-skills li {
@@ -239,10 +246,10 @@ html {
 }
 
 .btn-more {
-  background-color: var(--primary);
+  background-color: #36b37f;
   padding: 0.5em;
   border-radius: 5%;
-  color: #fff;
+  color: #fff !important;
   width: 50%;
   margin: 0 auto;
 }
@@ -271,4 +278,26 @@ html {
   bottom: 0;
   left: -2.8em;
   background-image: url(./images/about-me-pic-2);
+}
+
+#third-section {
+  background-color: #ebf0ee;
+  border-radius: 3%;
+  height: 300px;
+  margin-bottom: 1em;
+}
+
+.third-section-h2 {
+  color: #344563;
+}
+
+#thid-section-ul li {
+  padding: 0.8em 0.5em;
+  margin-top: 1em;
+  background-color: #fff;
+  color: #36b37e;
+}
+#thid-section-ul {
+  flex-wrap: wrap;
+  justify-content: center;
 }
