@@ -2,7 +2,8 @@
 
 This project is my first Portfolio page and its mobile version.
 
-![Screen Shot 2021-06-03 at 13 56 19](https://user-images.githubusercontent.com/84941433/120641514-f70c6580-c473-11eb-9f8b-b2a290503223.png)
+![Screenshot](./Screen Shot 1.png)
+![Screenshot](./Screen Shot 2.png)
 
 Built With HTML5, CSS
 
@@ -17,7 +18,8 @@ Open the live server
 Prerequisites
 
 Vs code Studio
-Authors bust_in_silhouette Author1
+Authors
+bust_in_silhouette Author1
 
 [GitHub]( https://github.com/SimonGrchevski )
 [LinkedIn]( https://www.linkedin.com/in/simon-grchevski-682935209/ )
