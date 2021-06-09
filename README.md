@@ -15,14 +15,22 @@ Clone the project from the console with command $git clone https://github.com/Si
 cd into the Portfolio rep.
 In terminal write $code .
 Open the live server
+
 Prerequisites
 
-Vs code Studio
+    Vs code Studio
+    
 Authors
-:bust_in_silhouette: **Author1**
+
+:bust_in_silhouette: **Simon Grcevski**
 
 [GitHub]( https://github.com/SimonGrchevski )
 [LinkedIn]( https://www.linkedin.com/in/simon-grchevski-682935209/ )
+
+:bust_in_silhouette: **Elmar Abdulkarimov**
+
+- GitHub: [@elmar8287](https://github.com/elmar8287)
+
 
 handshake Contributing Contributions, issues, and feature requests are welcome!
 

@@ -1,6 +1,7 @@
 /*
               Globals
 */
+
 :root {
   --primary: #36b37e;
   --secondary: #172b4d;
@@ -65,6 +66,7 @@ a:visited {
 /*
               Typography
 */
+
 html {
   font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif;
 }
@@ -302,4 +304,79 @@ html {
 .third-section-ul-cls {
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.get-in-touch-container {
+  padding-bottom: 5em;
+  position: relative;
+}
+
+.get-in-touch-container h2 {
+  font-size: 2.3em;
+  color: #172b4d;
+}
+
+.get-in-touch-container header {
+  margin-bottom: 1em;
+}
+
+form {
+  padding-bottom: 1em;
+}
+
+input {
+  padding: 0.3em;
+  color: #6b778c;
+}
+
+textarea,
+input {
+  width: 100%;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  margin-bottom: 1em;
+}
+
+textarea {
+  color: #091e42;
+}
+
+.submit {
+  background-color: #36b37f;
+  padding: 0.7em;
+  border-radius: 2px;
+  border: transparent;
+  width: 40%;
+  color: #fff;
+}
+
+.submit:hover {
+  background-color: #037043;
+}
+
+.get-in-touch-social {
+  width: 60%;
+}
+
+.get-in-touch-social ul {
+  padding-bottom: 0.5em;
+}
+
+.contact-email:hover {
+  color: #000;
+}
+
+.shape {
+  background: #000;
+  border-radius: 8px;
+  width: 40%;
+  height: 3px;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.shape:hover {
+  background: rgba(187, 182, 182, 0.315);
 }
