@@ -1,6 +1,7 @@
 /*
               Globals
 */
+
 :root {
   --primary: #36b37e;
   --secondary: #172b4d;
@@ -62,12 +63,15 @@ a:visited {
   position: absolute;
 }
 
+
 /*
               Typography
 */
+
 html {
   font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif;
 }
+
 
 /*
               Header
@@ -85,6 +89,7 @@ html {
 .menu:hover {
   cursor: pointer;
 }
+
 
 /*
               Headline
@@ -104,6 +109,7 @@ html {
 .social-ul {
   justify-content: space-between;
 }
+
 
 /*
               Positioning the background images
@@ -308,21 +314,25 @@ html {
   padding-bottom: 5em;
   position: relative;
 }
+
 .get-in-touch-container h2 {
   font-size: 2.3em;
   color: #172B4D;
 }
+
 .get-in-touch-container header {
   margin-bottom: 1em;
 }
-form
-{
+
+form {
   padding-bottom: 1em;
 }
-input{
+
+input {
   padding: 0.3em;
   color: #6B778C;
 }
+
 textarea,
 input {
   width: 100%;
@@ -331,9 +341,11 @@ input {
   border: 1px solid #D0D9D4;
   margin-bottom: 1em;
 }
+
 textarea {
   color: #091E42;
 }
+
 .submit {
   background-color: #36B37F;
   padding: 0.7em;
@@ -342,18 +354,23 @@ textarea {
   width: 40%;
   color: #fff;
 }
+
 .submit:hover {
   background-color: #037043;
 }
+
 .get-in-touch-social {
   width: 60%;
 }
+
 .get-in-touch-social ul {
   padding-bottom: 0.5em;
 }
+
 .contact-email:hover {
   color: #000;
 }
+
 .shape {
   background: #000;
   border-radius: 8px;
@@ -361,9 +378,13 @@ textarea {
   height: 3px;
   bottom: 1px;
   left: 50%;
-  transform:translateX(-50%);
+  transform: translateX(-50%);
 }
+
 .shape:hover {
   background: rgba(187, 182, 182, 0.315);
 }
 
+.block {
+  display: block;
+}
