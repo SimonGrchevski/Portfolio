@@ -430,4 +430,16 @@ textarea {
     grid-column-gap: 1em;
   }
 
+  .card-container {
+    padding-bottom: 3em;
+  }
+
+  .trd-section{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .third-section-cls {
+    flex-basis:32%;
+  }
 }
