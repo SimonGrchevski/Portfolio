@@ -63,7 +63,6 @@ a:visited {
   position: absolute;
 }
 
-
 /*
               Typography
 */
@@ -71,7 +70,6 @@ a:visited {
 html {
   font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif;
 }
-
 
 /*
               Header
@@ -89,7 +87,6 @@ html {
 .menu:hover {
   cursor: pointer;
 }
-
 
 /*
               Headline
@@ -109,7 +106,6 @@ html {
 .social-ul {
   justify-content: space-between;
 }
-
 
 /*
               Positioning the background images
@@ -317,7 +313,7 @@ html {
 
 .get-in-touch-container h2 {
   font-size: 2.3em;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .get-in-touch-container header {
@@ -330,7 +326,7 @@ form {
 
 input {
   padding: 0.3em;
-  color: #6B778C;
+  color: #6b778c;
 }
 
 textarea,
@@ -338,16 +334,16 @@ input {
   width: 100%;
   border-radius: 4px;
   background: #fff;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   margin-bottom: 1em;
 }
 
 textarea {
-  color: #091E42;
+  color: #091e42;
 }
 
 .submit {
-  background-color: #36B37F;
+  background-color: #36b37f;
   padding: 0.7em;
   border-radius: 2px;
   border: transparent;
