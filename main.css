@@ -82,6 +82,13 @@ html {
 .main-header {
   justify-content: space-between;
   margin-bottom: 3em;
+  text-align: center;
+}
+
+.menu-list {
+  display: none;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .menu:hover {
@@ -379,4 +386,48 @@ textarea {
 
 .shape:hover {
   background: rgba(187, 182, 182, 0.315);
+}
+
+@media screen and (min-width: 1024px) {
+  .welcome {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-list {
+    display: flex;
+  }
+
+  .menu {
+    width: 30%;
+  }
+
+  .main-header {
+    justify-content: center;
+  }
+
+  .social-ul {
+    width:35%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  .headline {
+    padding-bottom: 7em;
+  }
+
+  .underline {
+    display:none;
+  }
+
+  .grid {
+    width: 100%;
+    grid-template-columns: repeat(3, 30%);
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+  }
+
 }
