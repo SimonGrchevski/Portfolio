@@ -513,4 +513,23 @@ textarea:hover {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .menu {
+    position: absolute;
+    animation-name: sliding-nav;
+    animation-duration: 2s;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  
+  @keyframes sliding-nav {
+    from {
+      right: 0;
+      opacity: 0.2
+    }
+    to {
+      right: 50%;
+      opacity: 1;
+    }
+  }
 }
