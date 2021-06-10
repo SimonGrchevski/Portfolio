@@ -532,4 +532,16 @@ textarea:hover {
       opacity: 1;
     }
   }
+
+  .card-container li {
+    transition: transform 1s;
+  }
+  .card-container:hover > li {
+    opacity: 0.3;
+  }
+
+  .card-container > li:hover {
+    opacity: 1;
+    transform: scale(1.1,1.1);
+  }
 }
