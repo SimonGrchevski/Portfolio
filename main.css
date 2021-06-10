@@ -63,6 +63,7 @@ a:visited {
   position: absolute;
 }
 
+
 /*
               Typography
 */
@@ -70,6 +71,7 @@ a:visited {
 html {
   font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif;
 }
+
 
 /*
               Header
@@ -95,6 +97,7 @@ html {
   cursor: pointer;
 }
 
+
 /*
               Headline
 */
@@ -113,6 +116,7 @@ html {
 .social-ul {
   justify-content: space-between;
 }
+
 
 /*
               Positioning the background images
@@ -392,57 +396,45 @@ textarea {
   .welcome {
     display: none;
   }
-
   .menu-icon {
     display: none;
   }
-
   .menu-list {
     display: flex;
   }
-
   .menu {
     width: 30%;
   }
-
   .main-header {
     justify-content: center;
   }
-
   .social-ul {
     width: 35%;
     margin: 0 auto;
     margin-bottom: 2em;
   }
-
   .headline {
     padding-bottom: 7em;
   }
-
   .underline {
     display: none;
   }
-
   .grid {
     width: 100%;
     grid-template-columns: repeat(3, 30%);
     grid-row-gap: 1em;
     grid-column-gap: 1em;
   }
-
   .card-container {
     padding-bottom: 3em;
   }
-
   .trd-section {
     display: flex;
     justify-content: space-between;
   }
-
   .third-section-cls {
     flex-basis: 32%;
   }
-
   .get-in-touch-container {
     padding-top: 3em;
   }
@@ -450,32 +442,26 @@ textarea {
     display: flex;
     justify-content: space-between;
   }
-
   .form-container header,
   .form-container form {
-    flex-basis:45%;
+    flex-basis: 45%;
   }
-
   .form-container header h2 {
     font-size: 1.8em;
     padding-top: 1em;
     font-weight: bold;
   }
-
   .shape {
     display: none;
   }
-  
   .contact-email {
     display: none;
   }
-
-  .desktop-line{
+  .desktop-line {
     width: 100%;
     height: 1px;
     background: rgba(0, 0, 0, 0.329);
   }
-
   .get-in-touch-social {
     position: absolute;
     bottom: 0;
