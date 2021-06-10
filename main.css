@@ -388,6 +388,37 @@ textarea {
   background: rgba(187, 182, 182, 0.315);
 }
 
+/*
+        Animations
+*/
+
+.welcome {
+  transition-duration: 1s;
+  animation-duration: 1s;
+  animation-name: rotating;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.welcome:hover {
+  transform: scale(1.1);
+}
+
+input:hover,
+textarea:hover {
+  transform: translate(3px);
+  transform: scaleY(1.09);
+  padding-left: 10px;
+}
+
 @media screen and (min-width: 1024px) {
   .welcome {
     display: none;
@@ -403,6 +434,11 @@ textarea {
 
   .menu {
     width: 30%;
+    position: absolute;
+    animation-name: sliding-nav;
+    animation-duration: 2s;
+    right: 50%;
+    transform: translateX(50%);
   }
 
   .main-header {
@@ -482,5 +518,30 @@ textarea {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  @keyframes sliding-nav {
+    from {
+      right: 0;
+      opacity: 0.2;
+    }
+
+    to {
+      right: 50%;
+      opacity: 1;
+    }
+  }
+
+  .card-container li {
+    transition: transform 1s;
+  }
+
+  .card-container:hover > li {
+    opacity: 0.3;
+  }
+
+  .card-container > li:hover {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
   }
 }
