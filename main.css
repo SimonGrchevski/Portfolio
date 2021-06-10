@@ -388,6 +388,25 @@ textarea {
   background: rgba(187, 182, 182, 0.315);
 }
 
+/*
+        Animations
+*/
+
+.welcome {
+  transition-duration: 1s;
+  animation-duration: 1s;
+  animation-name: rotating;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .welcome {
     display: none;
