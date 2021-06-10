@@ -410,7 +410,7 @@ textarea {
   }
 
   .social-ul {
-    width:35%;
+    width: 35%;
     margin: 0 auto;
     margin-bottom: 2em;
   }
@@ -420,7 +420,7 @@ textarea {
   }
 
   .underline {
-    display:none;
+    display: none;
   }
 
   .grid {
@@ -435,12 +435,12 @@ textarea {
   }
 
   .trd-section {
-    display:flex;
+    display: flex;
     justify-content: space-between;
   }
 
   .third-section-cls {
-    flex-basis:32%;
+    flex-basis: 32%;
   }
 
   .get-in-touch-container {
@@ -479,6 +479,7 @@ textarea {
   .get-in-touch-social {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
