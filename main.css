@@ -407,6 +407,10 @@ textarea {
   }
 }
 
+.welcome:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (min-width: 1024px) {
   .welcome {
     display: none;
