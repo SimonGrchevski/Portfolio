@@ -27,9 +27,6 @@ Authors
 [GitHub]( https://github.com/SimonGrchevski )
 [LinkedIn]( https://www.linkedin.com/in/simon-grchevski-682935209/ )
 
-:bust_in_silhouette: **Elmar Abdulkarimov**
-
-- GitHub: [@elmar8287](https://github.com/elmar8287)
 
 
 handshake Contributing Contributions, issues, and feature requests are welcome!
