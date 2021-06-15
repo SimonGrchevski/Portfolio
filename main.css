@@ -276,6 +276,11 @@ html {
   display: inline-block;
   width: auto !important;
   margin-top: 1em;
+  background-color: #037043;
+}
+.btn-resume:hover,
+.btn-resume:focus {
+  background-color: #013a22;
 }
 
 .about-img-1 {
