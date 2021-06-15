@@ -267,7 +267,7 @@ html {
   height: 300px;
 }
 
-.about-me h1 {
+.about-me h2 {
   color: var(--secondary);
   font-size: 2em;
 }
