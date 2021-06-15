@@ -253,12 +253,17 @@ html {
 }
 
 .btn-more {
-  background-color: #36b37f;
+  background-color: #037043;
   padding: 0.5em;
   border-radius: 5%;
   color: #fff !important;
   width: 50%;
   margin: 0 auto;
+}
+
+.btn-more:hover,
+.btn-more:focus {
+  background-color: #02472a;
 }
 
 .about-me {
@@ -278,6 +283,7 @@ html {
   margin-top: 1em;
   background-color: #037043;
 }
+
 .btn-resume:hover,
 .btn-resume:focus {
   background-color: #013a22;
@@ -355,7 +361,7 @@ textarea {
 }
 
 .submit {
-  background-color: #36b37f;
+  background-color: #037043;
   padding: 0.7em;
   border-radius: 2px;
   border: transparent;
@@ -363,8 +369,9 @@ textarea {
   color: #fff;
 }
 
-.submit:hover {
-  background-color: #037043;
+.submit:hover,
+.submit:focus {
+  background-color: #012415;
 }
 
 .get-in-touch-social {
