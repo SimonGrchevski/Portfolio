@@ -2,11 +2,18 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <script src="https://unpkg.com/feather-icons"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <link href="main.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
@@ -17,296 +24,267 @@
 
 
 
-  <header class="main-header flex pd-tp-bt">
-    <section class="welcome">
-      <a href="./index.html">
-        <h3>Welcome</h3>
-      </a>
-    </section>
-    <nav class="menu">
-      <i class="fa fa-bars menu-icon" aria-hidden="true"></i>
-      <ul class="menu-list">
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <header>
+    <article class="container">
+      <div class="row">
+        <section class="display-none col-6">
+          <a href="./index.html">
+            <h3>Welcome</h3>
+          </a>
+        </section>
+        <nav class="navbar navbar-expand-sm col-12 justify-content-center ">
+          <i class="fa fa-bars menu-icon display-none" aria-hidden="true"></i>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </article>
   </header>
   <main>
-    <section class="headline pd-tp-bt">
-      <header>
-        <h1>
-          <span class="clr-secondary">Hey there. I’m Simon</span><span class="clr-primary block">I’m a software
-            developer</span>
-        </h1>
+    <section class="container">
+      <header class="row text-center">
+        <section class="col-12">
+          <h1>
+            Hey there. I’m Simon<br>I’m a software
+            developer
+          </h1>
+        </section>
+        <section class="col-12 text-center">
+          <p>
+            I can help you build a product , feature or website Look through some of my work and experience! If you like
+            what you
+            see and have a project you need coded, don’t hestiate to contact me.
+          </p>
+        </section>
+
       </header>
 
-      <section class="headline-info pd-tp-bt">
-        <p>
-          I can help you build a product , feature or website Look through some of my work and experience! If you like
-          what you
-          see and have a project you need coded, don’t hestiate to contact me.
-        </p>
-      </section>
-      <section class="social pd-tp-bt">
-        <ul class="flex social-ul">
-          <li><a href="https://twitter.com/"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
-          <li><a href="https://linkedin.com"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
-          <li><a href="https://medium.com/"><i class="fa fa-medium " aria-hidden="true"></i></a></li>
-          <li><a href="https://github.com/"><i class="fa fa-github " aria-hidden="true"></i></a></li>
-          <li><a href="https://angel.co/"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
 
-        </ul>
+      <ul class="list-inline col-12 text-center">
+        <li>
+          <a href="https://twitter.com/"><i class="fa fa-twitter p-3" aria-hidden="true"></i></a>
+          <a href="https://linkedin.com"><i class="fa fa-linkedin p-3" aria-hidden="true"></i></a>
+          <a href="https://medium.com/"><i class="fa fa-medium p-3" aria-hidden="true"></i></a>
+          <a href="https://github.com/"><i class="fa fa-github p-3" aria-hidden="true"></i></a>
+          <a href="https://angel.co/"><i class="fa fa-angellist p-3" aria-hidden="true"></i></a>
+        </li>
 
-      </section>
-
-      <div class="abs pic1 bg-contain"></div>
-      <div class="abs pic2 bg-contain wh-50"></div>
-      <div class="abs pic3 wh-100 bg-contain"></div>
-      <div class="abs pic4 bg-contain"></div>
-      <div class="abs pic5 bg-contain wh-50"></div>
-      <div class="abs pic6 bg-contain"></div>
+      </ul>
 
       <div class="drop-down"><i data-feather="chevron-down" class="btn"></i></div>
     </section>
 
 
-
     <section>
-      <header class="clr-secondary works-title">
-        <h1>my recent works</h1>
+      <header class="text-center p-4">
+        <h1 class="display-3">My recent works</h1>
         <div class="underline"></div>
       </header>
+
+      <article class="container">
+        <div class="row justify-content-center ">
+          <div class="col-sm-4 form-group">
+            <div class="card text-center">
+              <img src="./images/Project.jpg" alt="project picture" class="class-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">See Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 form-group">
+            <div class="card text-center">
+              <img src="./images/Project.jpg" alt="project picture" class="class-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">See Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 form-group">
+            <div class="card text-center">
+              <img src="./images/Project.jpg" alt="project picture" class="class-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">See Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 form-group">
+            <div class="card text-center">
+              <img src="./images/Project.jpg" alt="project picture" class="class-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">See Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 form-group">
+            <div class="card text-center">
+              <img src="./images/Project.jpg" alt="project picture" class="class-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">See Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 form-group">
+            <div class="card text-center">
+              <img src="./images/Project.jpg" alt="project picture" class="class-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">See Project</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </article>
     </section>
-    <ul class="grid card-container">
 
+    <section class="container p-5">
+      <article class="row text-center">
+        <section class="col">
+          <h1>
+            About me
+          </h1>
+          <p>
+            I can help you build a product , feature or website Look through some of my work and experience! If you like
+            what you
+            see and have a project you need coded, don’t hestiate to contact me.
+          </p>
+          <a href="#" class="btn btn-primary">Get My Resume</a>
+        </section>
+      </article>
 
-      <li>
-        <article class="card flex column width100">
-
-          <div class="card-image width100 height50"></div>
-
-          <section class="img-info flex column height50">
-            <h2>Multi-Post Stories<br>Gain+Glory</h2>
-            <ul class="flex ul-skills">
-              <li><a href="#">Ruby on Rails</a></li>
-              <li><a href="#">Css</a></li>
-              <li><a href="#">JavaScript</a></li>
-              <li><a href="#">html</a></li>
-            </ul>
-            <a href="#" class="btn-more">See Project</a>
-          </section>
-
-        </article>
-      </li>
-      <li>
-        <article class="card flex column width100">
-
-          <div class="card-image width100 height50"></div>
-
-          <section class="img-info flex column height50">
-            <h2>Multi-Post Stories<br>Gain+Glory</h2>
-            <ul class="flex ul-skills">
-              <li><a href="#">Ruby on Rails</a></li>
-              <li><a href="#">Css</a></li>
-              <li><a href="#">JavaScript</a></li>
-              <li><a href="#">html</a></li>
-            </ul>
-            <a href="#" class="btn-more">See Project</a>
-          </section>
-
-        </article>
-      </li>
-      <li>
-        <article class="card flex column width100">
-
-          <div class="card-image width100 height50"></div>
-
-          <section class="img-info flex column height50">
-            <h2>Multi-Post Stories<br>Gain+Glory</h2>
-            <ul class="flex ul-skills">
-              <li><a href="#">Ruby on Rails</a></li>
-              <li><a href="#">Css</a></li>
-              <li><a href="#">JavaScript</a></li>
-              <li><a href="#">html</a></li>
-            </ul>
-            <a href="#" class="btn-more">See Project</a>
-          </section>
-
-        </article>
-      </li>
-      <li>
-        <article class="card flex column width100">
-
-          <div class="card-image width100 height50"></div>
-
-          <section class="img-info flex column height50">
-            <h2>Multi-Post Stories<br>Gain+Glory</h2>
-            <ul class="flex ul-skills">
-              <li><a href="#">Ruby on Rails</a></li>
-              <li><a href="#">Css</a></li>
-              <li><a href="#">JavaScript</a></li>
-              <li><a href="#">html</a></li>
-            </ul>
-            <a href="#" class="btn-more">See Project</a>
-          </section>
-
-        </article>
-      </li>
-      <li>
-        <article class="card flex column width100">
-
-          <div class="card-image width100 height50"></div>
-
-          <section class="img-info flex column height50">
-            <h2>Multi-Post Stories<br>Gain+Glory</h2>
-            <ul class="flex ul-skills">
-              <li><a href="#">Ruby on Rails</a></li>
-              <li><a href="#">Css</a></li>
-              <li><a href="#">JavaScript</a></li>
-              <li><a href="#">html</a></li>
-            </ul>
-            <a href="#" class="btn-more">See Project</a>
-          </section>
-
-        </article>
-      </li>
-
-      <li>
-        <article class="card flex column width100">
-
-          <div class="card-image width100 height50"></div>
-
-          <section class="img-info flex column height50">
-            <h2>Multi-Post Stories<br>Gain+Glory</h2>
-            <ul class="flex ul-skills">
-              <li><a href="#">Ruby on Rails</a></li>
-              <li><a href="#">Css</a></li>
-              <li><a href="#">JavaScript</a></li>
-              <li><a href="#">html</a></li>
-            </ul>
-            <a href="#" class="btn-more">See Project</a>
-          </section>
-
-        </article>
-      </li>
-
-    </ul>
-
-    <section class="about-me">
-      <h1 class="pd-tp-bt">
-        About me
-      </h1>
-      <p class="pd-bt">
-        I can help you build a product , feature or website Look through some of my work and experience! If you like
-        what you
-        see and have a project you need coded, don’t hestiate to contact me.
-      </p>
-      <a href="#" class="btn-more btn-resume">Get My Resume</a>
-
-      <div class="about-img-1 abs wh-100 bg-contain"></div>
-      <div class="about-img-2 wh-50 abs bg-contain"></div>
     </section>
 
 
-    <section class="trd-section">
-      <article class="card flex column clr-bg-gray third-section-cls">
-        <div><img src="./images/image1" alt="earth-logo" class="wh-100"></div>
+    <article class="container">
+      <section class="row justify-content-center">
 
-        <section class="img-info flex column height50">
-          <h2 class="third-section-h2">Languages</h2>
-          <ul class="flex ul-skills third-section-ul-cls">
-            <li><a href="#">Ruby on Rails</a></li>
-            <li><a href="#">Css</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">html</a></li>
-            <li><a href="#">Terminal</a></li>
-          </ul>
+        <section class="col-4">
+          <section class="card text-center">
+            <img src="./images/image1" alt="sd" class="card-img">
+            <div class="card-body">
+              <h2>Languages</h2>
+              <ul class="list-inline">
+                <li>
+                  <a href="#" class="p-1">HTML</a>
+                  <a href="#" class="p-1">HTML</a>
+                  <a href="#" class="p-1">HTML</a>
+                  <a href="#" class="p-1">HTML</a>
+                </li>
+
+              </ul>
+            </div>
+          </section>
         </section>
 
-      </article>
+        <section class="col-4">
+          <section class="card text-center">
+            <img src="./images/image2" alt="frameworks logo" class="card-img">
+            <div class="card-body">
+              <h2>Frameworks</h2>
+              <ul class="list-inline">
+                <li>
+                  <a href="#" class="p-1">HTML</a>
+                  <a href="#" class="p-1">HTML</a>
+                  <a href="#" class="p-1">HTML</a>
+                  <a href="#" class="p-1">HTML</a>
+                </li>
 
-      <article class="card flex column clr-bg-gray third-section-cls">
-        <div><img src="./images/image2" alt="frameworks logo" class="wh-100"></div>
-
-        <section class="img-info flex column height50">
-          <h2 class="third-section-h2">Frameworks</h2>
-          <ul class="flex ul-skills third-section-ul-cls">
-            <li><a href="#">Bootstrap</a></li>
-            <li><a href="#">Ruby</a></li>
-            <li><a href="#">Rspec</a></li>
-            <li><a href="#">Capybara</a></li>
-            <li><a href="#">Selenium</a></li>
-          </ul>
+              </ul>
+            </div>
+          </section>
         </section>
 
-      </article>
 
-      <article class="card flex column clr-bg-gray third-section-cls">
-        <div><img src="./images/image3" alt="skills logo" class="wh-100"></div>
+        <section class="col-4">
+          <section class="card text-center">
+            <img src="./images/image3" alt="skills logo" class="card-img">
+            <div class="card-body">
+              <h2>Skills</h2>
+              <ul class="list-inline">
+                <li>
+                  <a href="#" class="p-1">HTML</a>
+                  <a href="#" class="p-1">HTML</a>
+                  <a href="#" class="p-1">HTML</a>
+                  <a href="#" class="p-1">HTML</a>
+                </li>
 
-        <section class="img-info flex column height50">
-          <h2 class="third-section-h2">Skills</h2>
-          <ul class="flex ul-skills third-section-ul-cls">
-            <li><a href="#">CodeKit</a></li>
-            <li><a href="#">Github</a></li>
-            <li><a href="#">CodePen</a></li>
-            <li><a href="#">Gitlab</a></li>
-            <li><a href="#">Terminal</a></li>
-          </ul>
+              </ul>
+            </div>
+          </section>
         </section>
 
-      </article>
 
 
-    </section>
-
-    <article class="get-in-touch-container">
-      <section class="form-container">
-        <header>
-          <h2>
-            I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-          </h2>
-        </header>
-
-        <form action="https://formspree.io/f/mknkbnjp" method="POST">
-          <ul>
-            <li>
-              <input type="text" name="name" maxlength="30" placeholder="Full name" required>
-            </li>
-
-
-            <li><input type="email" name="email" placeholder="Email address" required>
-            </li>
-
-            <li>
-              <textarea name="message" maxlength="500" cols="30" rows="10" placeholder="Enter text here"
-                required></textarea>
-            </li>
-
-            <li>
-              <button type="submit" class="submit">Get in touch</button>
-            </li>
-          </ul>
-
-        </form>
       </section>
-
-      <div class="desktop-line"></div>
-      <section class="social pd-tp-bt get-in-touch-social">
-        <ul class="flex social-ul">
-          <li><a href="https://twitter.com/"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
-          <li><a href="https://linkedin.com"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
-          <li><a href="https://medium.com/"><i class="fa fa-medium " aria-hidden="true"></i></a></li>
-          <li><a href="https://github.com/"><i class="fa fa-github " aria-hidden="true"></i></a></li>
-          <li><a href="https://angel.co/"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
-
-        </ul>
-        <a href="#" class="contact-email">simongrcevski@gmail.com</a>
-      </section>
-
-      <div class="shape abs"></div>
     </article>
+
+
+    <section class="container p-5">
+      <section class="row">
+        <section class="col-6 my-auto">
+          <header>
+            <h2>
+              I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+            </h2>
+          </header>
+        </section>
+
+
+        <section class="col-6 text-center">
+
+          <form action="https://formspree.io/f/mknkbnjp" method="POST">
+            <section class="form-group">
+              <input type="text" name="name" maxlength="30" placeholder="Full name" required class="form-control">
+
+              <input type="email" name="email" placeholder="Email address" required class="form-control">
+
+              <textarea name="message" maxlength="500" cols="30" rows="10" placeholder="Enter text here" required
+                class="form-control"></textarea>
+              <button type="submit" class="btn btn-primary btn-lg mt-3">Get in touch</button>
+            </section>
+
+          </form>
+
+
+
+
+        </section>
+
+
+        <ul class="list-inline col-12 text-center">
+          <li>
+            <a href="https://twitter.com/"><i class="fa fa-twitter p-3" aria-hidden="true"></i></a>
+            <a href="https://linkedin.com"><i class="fa fa-linkedin p-3" aria-hidden="true"></i></a>
+            <a href="https://medium.com/"><i class="fa fa-medium p-3" aria-hidden="true"></i></a>
+            <a href="https://github.com/"><i class="fa fa-github p-3" aria-hidden="true"></i></a>
+            <a href="https://angel.co/"><i class="fa fa-angellist p-3" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+
+        <section class="col-12 text-center">
+          <a href="#" class="contact-email">simongrcevski@gmail.com</a>
+        </section>
+      </section>
+
+
+
+    </section>
   </main>
 
   <script>
