@@ -19,7 +19,7 @@ function addBackground(abs) {
 }
 
 function phone(screenSize) {
-  if (screenSize.matches) { // If media query matches
+  if (screenSize.matches) {
     list.style.display = 'flex';
     hamX.className = 'fa fa-bars menu-icon';
     hamX.style.color = 'black';
