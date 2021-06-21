@@ -2,6 +2,7 @@ const list = document.getElementById('menu-list');
 const hamX = document.getElementById('ham_x');
 const screenSize = window.matchMedia('(min-width: 1024px)');
 const menu_icon = document.querySelector(".menu-icon");
+const abs = document.querySelector(".abs");
 
 function phone(screenSize) {
   if (screenSize.matches) { // If media query matches
@@ -24,9 +25,11 @@ function show() {
     hamX.style.color= "grey";
     list.style.display = 'block';
     menu_icon.style.marginLeft = '45vw';
+    abs.style.display="none"
   } else {
     hamX.className = 'fa fa-bars menu-icon';
     hamX.style.color= "black";
     list.style.display = 'none';
+    abs.style.display="absolute";
   }
 }
