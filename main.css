@@ -25,6 +25,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #505F79;
 }
 
 li {
@@ -91,6 +92,10 @@ html {
   justify-content: space-between;
 }
 
+.menu a {
+  color: #344563;
+}
+
 .menu:hover {
   cursor: pointer;
 }
@@ -112,6 +117,10 @@ html {
 
 .social-ul {
   justify-content: space-between;
+}
+
+.social-ul a {
+  color: #505F79;
 }
 
 /*
@@ -226,6 +235,10 @@ html {
   border: 2px solid #ebf0ee;
   border-radius: 8%;
   background-color: white;
+}
+
+.card a {
+  color: #3a4a42;
 }
 
 .img-info {
