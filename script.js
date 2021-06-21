@@ -25,29 +25,30 @@ function phone(screenSize) {
     list.classList.remove('open_menu');
     addBackground(abs);
   } else {
-    welcome.style.display ='block';
+    welcome.style.display = 'block';
     list.style.display = 'none';
     list.classList.add('open_menu');
   }
 }
-phone(screenSize);
-screenSize.addListener(phone);
-hamX.addEventListener('click', show);
 
 function show() {
   if (hamX.className === 'fa fa-bars menu-icon') {
     hamX.className = 'fa fa-times menu-icon';
-    hamX.style.color = "grey";
+    hamX.style.color = 'grey';
     list.style.display = 'block';
     menu_icon.style.marginLeft = '45vw';
-    welcome.style.display ='none';
+    welcome.style.display = 'none';
     // remove background
     removeBackground(abs);
   } else {
     hamX.className = 'fa fa-bars menu-icon';
-    hamX.style.color = "black";
+    hamX.style.color = 'black';
     list.style.display = 'none';
-    welcome.style.display ='block';
+    welcome.style.display = 'block';
     addBackground(abs);
   }
 }
+
+phone(screenSize);
+screenSize.addListener(phone);
+hamX.addEventListener('click', show);
