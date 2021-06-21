@@ -17,6 +17,7 @@ function addBackground(abs) {
     element.style.display = 'block';
   });
 }
+
 function phone(screenSize) {
   if (screenSize.matches) { // If media query matches
     list.style.display = 'flex';
