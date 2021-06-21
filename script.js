@@ -5,8 +5,6 @@ const menuIcon = document.querySelector('.menu-icon');
 const abs = document.querySelectorAll('.abs');
 const welcome = document.querySelector('.welcome');
 
-
-console.log(window.matchMedia('(min-width: 1024px)'));
 function removeBackground(abs) {
   Array.from(abs).forEach((element) => {
     element.style.display = 'none';
