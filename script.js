@@ -4,6 +4,7 @@ const screenSize = window.matchMedia('(min-width: 1024px)');
 const menuIcon = document.querySelector('.menu-icon');
 const abs = document.querySelectorAll('.abs');
 const welcome = document.querySelector('.welcome');
+const dropDownShape = document.querySelector('.drop-down-mobile');
 
 function removeBackground(abs) {
   Array.from(abs).forEach((element) => {
@@ -26,6 +27,7 @@ function phone(screenSize) {
     list.classList.remove('open_menu');
     addBackground(abs);
     welcome.style.display = 'none';
+    dropDownShape.style.display = 'none';
   } else {
     welcome.style.display = 'block';
     list.style.display = 'none';
@@ -40,6 +42,7 @@ function show() {
     list.style.display = 'block';
     menuIcon.style.marginLeft = '45vw';
     welcome.style.display = 'none';
+    dropDownShape.style.display = 'block';
     // remove background
     removeBackground(abs);
   } else {
@@ -48,6 +51,7 @@ function show() {
     list.style.display = 'none';
     welcome.style.display = 'block';
     addBackground(abs);
+    dropDownShape.style.display = 'none';
   }
 }
 

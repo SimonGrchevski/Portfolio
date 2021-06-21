@@ -28,6 +28,11 @@ a {
   color: #505f79;
 }
 
+.none 
+{
+  display: none;
+}
+
 li {
   list-style-type: none;
 }
@@ -121,6 +126,13 @@ html {
 
 .social-ul a {
   color: #505f79;
+}
+
+.drop-down-mobile {
+  width: 20%;
+  height: 2px;
+  background-color: #0d151e;
+  margin: 0 auto;
 }
 
 /*
@@ -392,7 +404,7 @@ textarea {
 }
 
 .open_menu {
-  height: 100vw;
+  height: calc(100vh - 120px);
   width: 100vw;
   background-color: white;
   margin-left: -5vw;
