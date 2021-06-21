@@ -132,6 +132,7 @@ html {
   height: 2px;
   background-color: #0d151e;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 /*
@@ -403,7 +404,7 @@ textarea {
 }
 
 .open_menu {
-  height: calc(100vh - 120px);
+  height: 95vh;
   width: 100vw;
   background-color: white;
   margin-left: -5vw;
