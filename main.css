@@ -16,7 +16,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   overflow-y: scroll;
   width: 80vw;
   margin: 0 auto;
@@ -372,6 +372,19 @@ textarea {
 
 .contact-email:hover {
   color: #000;
+}
+
+.open_menu {
+  height: 100vw;
+  width: 100vw;
+  background-color: white;
+  margin-left: -15vw;
+  font-size: 32px;
+  text-align: center;
+}
+
+.open_menu li {
+  padding: 40px;
 }
 
 .shape {
