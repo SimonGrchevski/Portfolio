@@ -380,11 +380,12 @@ textarea {
   background-color: white;
   margin-left: -15vw;
   font-size: 32px;
-  text-align: center;
+  text-align: left;
 }
 
 .open_menu li {
   padding: 40px;
+
 }
 
 .shape {

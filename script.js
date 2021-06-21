@@ -1,6 +1,7 @@
 const list = document.getElementById('menu-list');
 const hamX = document.getElementById('ham_x');
 const screenSize = window.matchMedia('(min-width: 1024px)');
+const menu_icon = document.querySelector(".menu-icon");
 
 function phone(screenSize) {
   if (screenSize.matches) { // If media query matches
@@ -16,11 +17,11 @@ phone(screenSize);
 screenSize.addListener(phone);
 hamX.addEventListener('click', show);
 
-function show()
-{
+function show() {
   if (hamX.className === 'fa fa-bars menu-icon') {
     hamX.className = 'fa fa-times menu-icon';
     list.style.display = 'block';
+    menu_icon.style.marginLeft = '45vw';
   } else {
     hamX.className = 'fa fa-bars menu-icon';
     list.style.display = 'none';
