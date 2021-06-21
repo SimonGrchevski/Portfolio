@@ -21,8 +21,3 @@ hamX.addEventListener('click', () => {
     list.style.display = 'none';
   }
 });
-
-
-function show() {
-
-}
