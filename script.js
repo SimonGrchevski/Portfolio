@@ -18,21 +18,6 @@ function addBackground(abs) {
   });
 }
 
-function phone(screenSize) {
-  if (screenSize.matches) {
-    list.style.display = 'flex';
-    hamX.className = 'fa fa-bars menu-icon';
-    hamX.style.color = 'black';
-    list.classList.remove('open_menu');
-    addBackground(abs);
-    welcome.style.display = 'none';
-  } else {
-    welcome.style.display = 'block';
-    list.style.display = 'none';
-    list.classList.add('open_menu');
-  }
-}
-
 function show() {
   if (hamX.className === 'fa fa-bars menu-icon') {
     hamX.className = 'fa fa-times menu-icon';
@@ -50,7 +35,5 @@ function show() {
     addBackground(abs);
   }
 }
-
-phone(screenSize);
 screenSize.addListener(phone);
 hamX.addEventListener('click', show);
