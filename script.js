@@ -5,6 +5,8 @@ const menuIcon = document.querySelector('.menu-icon');
 const abs = document.querySelectorAll('.abs');
 const welcome = document.querySelector('.welcome');
 
+
+console.log(window.matchMedia('(min-width: 1024px)'));
 function removeBackground(abs) {
   Array.from(abs).forEach((element) => {
     element.style.display = 'none';
@@ -25,6 +27,7 @@ function phone(screenSize) {
     hamX.style.color = 'black';
     list.classList.remove('open_menu');
     addBackground(abs);
+    welcome.style.display = 'none';
   } else {
     welcome.style.display = 'block';
     list.style.display = 'none';
