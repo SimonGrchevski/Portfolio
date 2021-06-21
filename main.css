@@ -379,13 +379,13 @@ textarea {
   width: 100vw;
   background-color: white;
   margin-left: -5vw;
-  font-size: 32px;
+  font-size: 20px;
   text-align: left;
   border-radius: 20px;
 }
 
 .open_menu li {
-  padding: 40px;
+  padding: 10px;
 }
 
 .shape {
