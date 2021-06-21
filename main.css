@@ -321,6 +321,10 @@ html {
   color: #36b37e;
 }
 
+.third-section-ul-cls a {
+  color: #36b37e;
+}
+
 .third-section-ul-cls {
   flex-wrap: wrap;
   justify-content: center;
