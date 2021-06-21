@@ -12,7 +12,7 @@ function phone(screenSize) {
 }
 phone(screenSize);
 screenSize.addListener(phone);
-hamX.addEventListener('click', function() {
+hamX.addEventListener('click', () => {
   if (hamX.className === 'fa fa-bars menu-icon') {
     hamX.className = 'fa fa-times menu-icon';
     list.style.display = 'block';
@@ -21,3 +21,8 @@ hamX.addEventListener('click', function() {
     list.style.display = 'none';
   }
 });
+
+
+function show() {
+
+}
