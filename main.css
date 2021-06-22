@@ -114,6 +114,7 @@ html {
 
 .headline {
   padding: 150px 20% 500px 20%;
+  padding-top: 4em;
 }
 
 .social {
@@ -125,6 +126,7 @@ html {
 .headline-info {
   font-size: 0.9em;
   color: #172b4d;
+  padding-top: 3em;
 }
 
 .social-ul {
@@ -143,9 +145,9 @@ html {
   margin-bottom: 50px;
 }
 
-/*
-              Positioning the background images
-*/
+.drop-down {
+  padding-top: 3em;
+}
 
 .wh-50 {
   width: 50px;
@@ -177,6 +179,7 @@ html {
   margin: 0.5em 0 2em 0;
 }
 
+
 .underline {
   width: 15%;
   height: 3px;
@@ -184,6 +187,10 @@ html {
   background-color: var(--primary);
   border-radius: 5%;
   margin-top: 1em;
+}
+
+.underline:hover {
+  background-color: #07aa66;
 }
 
 .grid {
@@ -234,7 +241,7 @@ html {
 .ul-skills li {
   margin: 0 0.3em;
   font-size: 0.7em;
-  padding: 3px 2px;
+  padding: 10px 10px;
   border-radius: 5%;
   background-color: #ebf0ee;
   cursor: pointer;
@@ -242,10 +249,10 @@ html {
 
 .btn-more {
   background-color: #36b37f;
-  padding: 0.5em;
+  padding: 12px;
   border-radius: 5%;
   color: #fff !important;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 }
 
