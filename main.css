@@ -257,9 +257,11 @@ html {
 }
 
 .about-me {
-  margin: 2em 0;
-  position: relative;
   height: 300px;
+  background-image: url(./images/illustration-about-me-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .about-me h1 {
@@ -271,6 +273,7 @@ html {
   display: inline-block;
   width: auto !important;
   margin-top: 1em;
+  align-self: end;
 }
 
 .about-img-1 {
@@ -295,6 +298,7 @@ html {
 .third-section-h2 {
   color: #344563;
 }
+
 
 .third-section-ul-cls li {
   padding: 0.8em 0.5em;
