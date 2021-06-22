@@ -89,16 +89,16 @@ html {
   justify-content: space-between;
   text-align: center;
   position: sticky;
-  top: 0;
+  top: 5px;
 }
 
 .menu-list {
   display: none;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .menu-list li {
-  padding: 0 20px;
+  padding: 0 30px;
 }
 .menu a {
   color: #344563;
@@ -480,7 +480,6 @@ textarea:hover {
 
   .card-container {
     padding-bottom: 3em;
-    justify-content: center;
   }
 
   .trd-section {
