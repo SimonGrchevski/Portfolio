@@ -558,12 +558,13 @@ textarea:hover {
   }
 
   .get-in-touch-container {
-    padding-top: 3em;
+    width:100%;
   }
 
   .form-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .form-container h2 {
@@ -584,11 +585,11 @@ textarea:hover {
   }
 
   .shape {
-    display: none;
+    display: none !important;
   }
 
   .contact-email {
-    display: none;
+    display: none !important;
   }
 
   .desktop-line {
@@ -602,6 +603,14 @@ textarea:hover {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .ul-bot {
+    margin: 0 auto;
+  }
+
+  .form-container {
+
   }
 
   @keyframes sliding-nav {
