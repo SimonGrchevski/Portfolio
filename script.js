@@ -25,34 +25,43 @@ function phone(screenSize) {
     hamX.className = 'fa fa-bars menu-icon';
     hamX.style.color = 'black';
     list.classList.remove('open_menu');
+
     addBackground(abs);
     welcome.style.display = 'none';
     dropDownShape.style.display = 'none';
   } else {
     welcome.style.display = 'block';
-    list.style.display = 'none';
+    // list.style.display = 'block';
     list.classList.add('open_menu');
   }
 }
 
 function show() {
-  if (hamX.className === 'fa fa-bars menu-icon') {
-    hamX.className = 'fa fa-times menu-icon';
-    hamX.style.color = 'grey';
-    list.style.display = 'flex';
-    list.style.flexDirection = 'column';
-    menuIcon.style.marginLeft = '45vw';
-    welcome.style.display = 'none';
-    dropDownShape.style.display = 'block';
-    // remove background
-    removeBackground(abs);
-  } else {
-    hamX.className = 'fa fa-bars menu-icon';
-    hamX.style.color = 'black';
-    list.style.display = 'none';
-    welcome.style.display = 'block';
-    addBackground(abs);
-    dropDownShape.style.display = 'none';
+  if (!screenSize.matches) {
+    if (hamX.className === 'fa fa-bars menu-icon') {
+      hamX.className = 'fa fa-times menu-icon';
+      hamX.style.color = 'grey';
+      hamX.style.fontSize = '30px';
+      hamX.style.right = '35px';
+      list.style.display = 'block';
+      // list.style.display = 'flex';
+      // list.style.flexDirection = 'column';
+      menuIcon.style.marginLeft = '45vw';
+      welcome.style.display = 'none';
+      dropDownShape.style.display = 'block';
+      // remove background
+      removeBackground(abs);
+    } else {
+      hamX.className = 'fa fa-bars menu-icon';
+      hamX.style.color = 'black';
+      hamX.style.right = '40px';
+      hamX.style.fontSize = '20px';
+      list.style.display = 'none';
+      // list.style.flexDirection = 'row';
+      welcome.style.display = 'block';
+      addBackground(abs);
+      dropDownShape.style.display = 'none';
+    }
   }
 }
 

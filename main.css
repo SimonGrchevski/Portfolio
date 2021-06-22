@@ -88,17 +88,32 @@ html {
 .main-header {
   justify-content: space-between;
   text-align: center;
-  position: sticky;
-  top: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  /* padding-left: 10px; */
+  /* top: 5px; */
+}
+
+.main-header h3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 .menu-list {
   display: none;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  padding-left: 20px;
+  padding-top: 50px;
 }
 
 .menu-list li {
   padding: 0 30px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 44px;
 }
 .menu a {
   color: #344563;
@@ -267,10 +282,8 @@ html {
 .about-me-bottom {
   display: flex;
   flex-direction: row;
-}
-
-.cristal{
-  position: absolute;
+  background-image: url(./images/cristal.png);
+  background-repeat: no-repeat;
 }
 
 .about-me h1 {
@@ -330,7 +343,7 @@ html {
 }
 
 .get-in-touch-container {
-  position: relative;
+  /* position: relative; */
   padding: 5em 10%;
 }
 
@@ -397,7 +410,18 @@ textarea {
   background-color: white;
   font-size: 20px;
   text-align: left;
-  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 800;
+  display: none;
+}
+
+.menu-icon {
+  font-size: 20px;
+  position: fixed;
+  right: 40px;
+  top: 10px;
+  z-index: 900;
 }
 
 .open_menu li {
@@ -467,20 +491,24 @@ footer {
 
   .menu-list {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
   }
 
   .menu-list li {
     padding: 0 20px;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .menu {
-    width: 30%;
+    padding-bottom: 10px;
+    /* width: 30%;
     position: absolute;
     animation-name: sliding-nav;
     animation-duration: 2s;
     right: 50%;
-    transform: translateX(50%);
+    transform: translateX(50%); */
   }
 
   .main-header {
