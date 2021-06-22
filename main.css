@@ -74,6 +74,10 @@ html {
 }
 
 /*
+              Nav
+*/
+
+/*
               Header
 */
 
@@ -84,6 +88,8 @@ html {
 .main-header {
   justify-content: space-between;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 .menu-list {
@@ -154,51 +160,6 @@ html {
 .bg-contain {
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.pic1 {
-  background-image: url(./images/pic1);
-  width: 70px;
-  height: 70px;
-  top: 3.3em;
-  right: -1.3em;
-}
-
-.pic2 {
-  background-image: url(./images/pic2);
-  top: 8em;
-  left: 0.3em;
-}
-
-.pic3 {
-  background-image: url(./images/pic3);
-  top: 13em;
-  right: -5em;
-  height: 100px;
-  width: 100px;
-}
-
-.pic4 {
-  background-image: url(./images/pic4);
-  background-size: contain;
-  top: 21em;
-  left: -0.5em;
-  width: 50px;
-  height: 70px;
-}
-
-.pic5 {
-  background-image: url(./images/pic5);
-  top: 23em;
-  right: 0.5em;
-}
-
-.pic6 {
-  background-image: url(./images/pic6);
-  width: 30px;
-  height: 30px;
-  top: 22em;
-  left: 6em;
 }
 
 .btn {
@@ -519,6 +480,7 @@ textarea:hover {
 
   .card-container {
     padding-bottom: 3em;
+    justify-content: center;
   }
 
   .trd-section {
@@ -597,7 +559,7 @@ textarea:hover {
   }
 
   .random {
-  height: 100vh;
+  /* height: 100vh; */
   background-image: url(./images/Header-llustration-desktop@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
