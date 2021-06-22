@@ -16,9 +16,6 @@
 }
 
 body {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  width: 80vw;
   margin: 0 auto;
   text-align: center;
 }
@@ -86,16 +83,17 @@ html {
 
 .main-header {
   justify-content: space-between;
-  margin-bottom: 3em;
   text-align: center;
 }
 
 .menu-list {
   display: none;
-  margin: 0 auto;
-  justify-content: space-between;
+  justify-content: start;
 }
 
+.menu-list li {
+  padding: 0 20px;
+}
 .menu a {
   color: #344563;
 }
@@ -107,6 +105,10 @@ html {
 /*
               Headline
 */
+
+.headline {
+  padding: 150px 20% 500px 20%;
+}
 
 .social {
   width: 50%;
@@ -431,6 +433,12 @@ textarea {
   background: rgba(187, 182, 182, 0.315);
 }
 
+.headline{
+  background-image: url(./images/header-illsutration-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  }
 /*
         Animations
 */
@@ -587,4 +595,17 @@ textarea:hover {
     opacity: 1;
     transform: scale(1.1, 1.1);
   }
+
+  .random {
+  height: 100vh;
+  background-image: url(./images/Header-llustration-desktop@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
+
+  .headline {
+    background-image: none;
+  }
 }
+
