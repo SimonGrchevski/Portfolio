@@ -16,15 +16,17 @@
 }
 
 body {
-  overflow: hidden;
-  overflow-y: scroll;
-  width: 80vw;
   margin: 0 auto;
   text-align: center;
 }
 
 a {
   text-decoration: none;
+  color: #505f79;
+}
+
+.none {
+  display: none;
 }
 
 li {
@@ -63,17 +65,9 @@ a:visited {
   position: absolute;
 }
 
-/*
-              Typography
-*/
-
 html {
   font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif;
 }
-
-/*
-              Header
-*/
 
 .flex {
   display: flex;
@@ -81,23 +75,47 @@ html {
 
 .main-header {
   justify-content: space-between;
-  margin-bottom: 3em;
   text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+}
+
+.main-header h3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 .menu-list {
   display: none;
-  margin: 0 auto;
-  justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+.menu-list li {
+  padding: 0 30px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+.menu a {
+  color: #344563;
 }
 
 .menu:hover {
   cursor: pointer;
 }
 
-/*
-              Headline
-*/
+.headline {
+  padding: 150px 20% 500px 20%;
+  padding-top: 4em;
+  background-image: url(./images/header-illsutration-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 .social {
   width: 50%;
@@ -108,15 +126,28 @@ html {
 .headline-info {
   font-size: 0.9em;
   color: #172b4d;
+  padding-top: 3em;
 }
 
 .social-ul {
   justify-content: space-between;
 }
 
-/*
-              Positioning the background images
-*/
+.social-ul a {
+  color: #505f79;
+}
+
+.drop-down-mobile {
+  width: 20%;
+  height: 2px;
+  background-color: #0d151e;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.drop-down {
+  padding-top: 3em;
+}
 
 .wh-50 {
   width: 50px;
@@ -131,51 +162,6 @@ html {
 .bg-contain {
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.pic1 {
-  background-image: url(./images/pic1);
-  width: 70px;
-  height: 70px;
-  top: 3.3em;
-  right: -1.3em;
-}
-
-.pic2 {
-  background-image: url(./images/pic2);
-  top: 8em;
-  left: 0.3em;
-}
-
-.pic3 {
-  background-image: url(./images/pic3);
-  top: 13em;
-  right: -5em;
-  height: 100px;
-  width: 100px;
-}
-
-.pic4 {
-  background-image: url(./images/pic4);
-  background-size: contain;
-  top: 21em;
-  left: -0.5em;
-  width: 50px;
-  height: 70px;
-}
-
-.pic5 {
-  background-image: url(./images/pic5);
-  top: 23em;
-  right: 0.5em;
-}
-
-.pic6 {
-  background-image: url(./images/pic6);
-  width: 30px;
-  height: 30px;
-  top: 22em;
-  left: 6em;
 }
 
 .btn {
@@ -202,6 +188,10 @@ html {
   margin-top: 1em;
 }
 
+.underline:hover {
+  background-color: #07aa66;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(1, 100%);
@@ -220,12 +210,20 @@ html {
   flex-direction: column;
 }
 
+.card-container {
+  padding: 0 10%;
+}
+
 .card {
-  height: 460px;
+  height: 470px;
   justify-content: center;
   border: 2px solid #ebf0ee;
-  border-radius: 8%;
+  border-radius: 8px;
   background-color: white;
+}
+
+.card a {
+  color: #3a4a42;
 }
 
 .img-info {
@@ -235,8 +233,8 @@ html {
 
 .card-image {
   background-color: #ebf0ee;
-  border-top-left-radius: 8%;
-  border-top-right-radius: 8%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .ul-skills {
@@ -246,7 +244,7 @@ html {
 .ul-skills li {
   margin: 0 0.3em;
   font-size: 0.7em;
-  padding: 3px 2px;
+  padding: 7px 7px;
   border-radius: 5%;
   background-color: #ebf0ee;
   cursor: pointer;
@@ -254,17 +252,22 @@ html {
 
 .btn-more {
   background-color: #36b37f;
-  padding: 0.5em;
+  padding: 7px;
   border-radius: 5%;
   color: #fff !important;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 }
 
 .about-me {
-  margin: 2em 0;
-  position: relative;
-  height: 300px;
+  padding: 3em 0;
+}
+
+.about-me-bottom {
+  display: flex;
+  flex-direction: row;
+  background-image: url(./images/cristal.png);
+  background-repeat: no-repeat;
 }
 
 .about-me h1 {
@@ -276,6 +279,7 @@ html {
   display: inline-block;
   width: auto !important;
   margin-top: 1em;
+  align-self: end;
 }
 
 .about-img-1 {
@@ -290,10 +294,14 @@ html {
   background-image: url(./images/about-me-pic-2);
 }
 
+.trd-section {
+  padding: 0 10%;
+}
+
 .third-section-cls {
   background-color: #ebf0ee;
   border-radius: 3%;
-  height: 300px;
+  height: 350px;
   margin-bottom: 1em;
 }
 
@@ -308,19 +316,23 @@ html {
   color: #36b37e;
 }
 
+.third-section-ul-cls a {
+  color: #36b37e;
+}
+
 .third-section-ul-cls {
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .get-in-touch-container {
-  padding-bottom: 5em;
-  position: relative;
+  padding: 5em 10%;
 }
 
 .get-in-touch-container h2 {
-  font-size: 2.3em;
+  font-size: 40px;
   color: #172b4d;
+  padding-bottom: 30px;
 }
 
 .get-in-touch-container header {
@@ -374,23 +386,41 @@ textarea {
   color: #000;
 }
 
+.open_menu {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  font-size: 20px;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  z-index: 800;
+  display: none;
+}
+
+.menu-icon {
+  font-size: 20px;
+  position: fixed;
+  right: 40px;
+  top: 10px;
+  z-index: 900;
+}
+
+.open_menu li {
+  padding: 10px;
+}
+
 .shape {
   background: #000;
   border-radius: 8px;
   width: 40%;
-  height: 3px;
-  bottom: 1px;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 2px;
+  margin: 0 auto;
 }
 
 .shape:hover {
   background: rgba(187, 182, 182, 0.315);
 }
-
-/*
-        Animations
-*/
 
 .welcome {
   transition-duration: 1s;
@@ -419,6 +449,10 @@ textarea:hover {
   padding-left: 10px;
 }
 
+footer {
+  margin-bottom: 10em;
+}
+
 @media screen and (min-width: 1024px) {
   .welcome {
     display: none;
@@ -430,15 +464,18 @@ textarea:hover {
 
   .menu-list {
     display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+  }
+
+  .menu-list li {
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .menu {
-    width: 30%;
-    position: absolute;
-    animation-name: sliding-nav;
-    animation-duration: 2s;
-    right: 50%;
-    transform: translateX(50%);
+    padding-bottom: 10px;
   }
 
   .main-header {
@@ -452,7 +489,32 @@ textarea:hover {
   }
 
   .headline {
-    padding-bottom: 7em;
+    padding-bottom: 11em;
+    padding-top: 150px;
+    background-image: none;
+  }
+
+  .headline-info {
+    margin: 0 50px;
+    line-height: 25px;
+  }
+
+  .drop-down {
+    padding-top: 0;
+  }
+
+  .works-title {
+    margin-top: 10em;
+  }
+
+  .works-title h1 {
+    color: #172b4d;
+  }
+
+  .btn-more {
+    padding: 10px;
+    width: 50%;
+    font-size: 14px;
   }
 
   .underline {
@@ -460,6 +522,7 @@ textarea:hover {
   }
 
   .grid {
+    padding: 0 5%;
     width: 100%;
     grid-template-columns: repeat(3, 30%);
     grid-row-gap: 1em;
@@ -470,6 +533,14 @@ textarea:hover {
     padding-bottom: 3em;
   }
 
+  .card-container .card {
+    height: 350px;
+  }
+
+  .about-me p {
+    margin: 0 20%;
+  }
+
   .trd-section {
     display: flex;
     justify-content: space-between;
@@ -477,15 +548,25 @@ textarea:hover {
 
   .third-section-cls {
     flex-basis: 32%;
+    height: 300px;
+    border: 1px solid #c1c7d0;
+    border-radius: 8px;
   }
 
   .get-in-touch-container {
-    padding-top: 3em;
+    width: 100%;
   }
 
   .form-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
   }
 
   .form-container header,
@@ -500,11 +581,11 @@ textarea:hover {
   }
 
   .shape {
-    display: none;
+    display: none !important;
   }
 
   .contact-email {
-    display: none;
+    display: none !important;
   }
 
   .desktop-line {
@@ -513,11 +594,8 @@ textarea:hover {
     background: rgba(0, 0, 0, 0.329);
   }
 
-  .get-in-touch-social {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  .ul-bot {
+    margin: 0 auto;
   }
 
   @keyframes sliding-nav {
@@ -543,5 +621,15 @@ textarea:hover {
   .card-container > li:hover {
     opacity: 1;
     transform: scale(1.1, 1.1);
+  }
+
+  .random {
+    background-image: url(./images/Header-llustration-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  footer {
+    width: 100%;
   }
 }
