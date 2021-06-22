@@ -601,10 +601,6 @@ footer {
     margin: 0 auto;
   }
 
-  .form-container {
-
-  }
-
   @keyframes sliding-nav {
     from {
       right: 0;
@@ -631,11 +627,9 @@ footer {
   }
 
   .random {
-  /* height: 100vh; */
   background-image: url(./images/Header-llustration-desktop@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
-
   }
 
   .headline {
