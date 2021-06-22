@@ -39,7 +39,8 @@ function show() {
   if (hamX.className === 'fa fa-bars menu-icon') {
     hamX.className = 'fa fa-times menu-icon';
     hamX.style.color = 'grey';
-    list.style.display = 'block';
+    list.style.display = 'flex';
+    list.style.flexDirection = 'column';
     menuIcon.style.marginLeft = '45vw';
     welcome.style.display = 'none';
     dropDownShape.style.display = 'block';
