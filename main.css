@@ -65,21 +65,9 @@ a:visited {
   position: absolute;
 }
 
-/*
-              Typography
-*/
-
 html {
   font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif;
 }
-
-/*
-              Nav
-*/
-
-/*
-              Header
-*/
 
 .flex {
   display: flex;
@@ -92,8 +80,6 @@ html {
   top: 0;
   width: 100%;
   background: white;
-  /* padding-left: 10px; */
-  /* top: 5px; */
 }
 
 .main-header h3 {
@@ -104,7 +90,6 @@ html {
 
 .menu-list {
   display: none;
-  /* justify-content: space-between; */
   padding-left: 20px;
   padding-top: 50px;
 }
@@ -122,10 +107,6 @@ html {
 .menu:hover {
   cursor: pointer;
 }
-
-/*
-              Headline
-*/
 
 .headline {
   padding: 150px 20% 500px 20%;
@@ -343,7 +324,6 @@ html {
 }
 
 .get-in-touch-container {
-  /* position: relative; */
   padding: 5em 10%;
 }
 
@@ -446,9 +426,6 @@ textarea {
   background-size: contain;
   
   }
-/*
-        Animations
-*/
 
 .welcome {
   transition-duration: 1s;
@@ -503,12 +480,6 @@ footer {
 
   .menu {
     padding-bottom: 10px;
-    /* width: 30%;
-    position: absolute;
-    animation-name: sliding-nav;
-    animation-duration: 2s;
-    right: 50%;
-    transform: translateX(50%); */
   }
 
   .main-header {
