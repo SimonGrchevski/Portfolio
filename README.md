@@ -1,15 +1,18 @@
 # Portfolio
 
-This project is my first Portfolio page and its mobile version.
+## This project is my Portfolio page and its mobile version.
+The new feature is the mobile menu that **cover the whole** page when *clicked* on it using javascript
+and improved the structure of the page.
 
-![Screenshot](./ScreenShot1.png)\
+![Screenshot](./ScreenShot1.png)
+
 ![Screenshot](./ScreenShot2.png)
 
-Built With HTML5, CSS
+## Built With HTML5, CSS, Javascript
 
 [Live Demo Link]( https://simongrchevski.github.io/Portfolio/ )
 
-Getting Started
+## Getting Started
 
 Clone the project from the console with command $git clone https://github.com/SimonGrchevski/Portfolio/tree/development
 cd into the Portfolio rep.
