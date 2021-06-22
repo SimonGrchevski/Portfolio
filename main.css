@@ -265,8 +265,26 @@ html {
   flex-direction: row;
 }
 
+.about-me-above {
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-me-above h1 {
+  margin-left: auto;
+  margin-right: 21vw;
+}
+
 .cristal{
   position: absolute;
+}
+
+.cristal2{
+  position: block;
+  right:40px
 }
 
 .about-me h1 {
