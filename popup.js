@@ -46,21 +46,25 @@ tags.forEach(tag => {
   let article = document.createElement(tag.tagName);
   article.classList.add(...tag.classes);
 
-
   let childElements = [];
   tag.child.forEach(childItem => {
     let element = document.createElement(childItem.tagName);
     childItem.classes.forEach(childClass => {
       element.classList.add(childClass);
     });
+    element.textContent = childItem.value;
     childElements.push(element);
   });
 
+  article.append(childElements[0], childElements[1]);
+  childElements[1].append(childElements[2], childElements[3], childElements[12]);
 
-  console.log(childElements[2]);
-  childElements[1].append(childElements[2], childElements[3]);
-  article.append(childElements[1]);
-  // console.log(article);
+  for (let li = 4; li <= 10; li += 2) {
+    childElements[li].append(childElements[li + 1]);
+    childElements[3].append(childElements[li]);
+  }
+
+  console.log(article);
 
   //article.append(childElements[0]);
   //console.log(childElements[0]);
