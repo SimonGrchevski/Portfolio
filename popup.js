@@ -187,13 +187,11 @@ populateCards(cards);
 
 
 modal = {
-  //maybe other type
+
   mModal: [],
   structure: [
     new Tag("section", ["modal-picture"], [], [], ""),
     new Tag("a", ["modal-close-button"], ["#"], "", "X"),
-    // take the title h2
-    // take the links
     new Tag("section", ["modal-info", "pd-tp-bt"], [], [], "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam "),
     new Tag("section", ["modal-buttons", "flex"], [], ""),
     new Tag("a", [], ["#"], "", "see live"),
