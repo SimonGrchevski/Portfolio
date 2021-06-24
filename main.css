@@ -457,6 +457,7 @@ footer {
 
   .modal-container h2 {
     float: left;
+    color: #172b4d;
   }
 
   .modal-container .modal-buttons {
@@ -478,8 +479,30 @@ footer {
     float: right;
   }
 
+  .modal-close-button {
+    padding: 8px;
+    background-color: #ebecf0;
+  }
+
   .modal-container .modal-picture {
     clear: both;
+    background-image: url(./images/Snapshoot-Desk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    width:100%;
+  }
+
+  .modal-container li {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #ebecf0;
+  }
+
+  .modal-info {
+    padding-top: 50px;
+    line-height: 30px;
+    font-size: 16px;
   }
 
   .welcome {
