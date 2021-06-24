@@ -1,3 +1,11 @@
+function Tag(tagName, classes, attr, child, value) {
+  this.tagName = tagName;
+  this.classes = classes;
+  this.attr = attr;
+  this.child = child;
+  this.value = value;
+}
+
 const tags = [{
   tagName: 'article',
   classes: ['card', 'flex', 'column', 'width100'],
@@ -125,20 +133,11 @@ const tags = [{
   value: ['']
 }];
 
-function Tag(tagName, classes, attr, child, value) {
-  this.tagName = tagName;
-  this.classes = classes;
-  this.attr = attr;
-  this.child = child;
-  this.value = value;
-}
-
 const cardContainer = document.querySelector('.card-container');
 
 function generateCards() {
 
-  let articles = [];
-  let click = 1;
+  const articles = [];
   tags.forEach((tag, i) => {
 
     let article = document.createElement(tag.tagName);
