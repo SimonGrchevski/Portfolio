@@ -6,20 +6,20 @@ const abs = document.querySelectorAll('.abs');
 const welcome = document.querySelector('.welcome');
 const dropDownShape = document.querySelector('.drop-down-mobile');
 
-function removeBackground(abs) {
-  Array.from(abs).forEach((element) => {
-    element.style.display = 'none';
+function removeBackground(absolute) {
+  Array.from(absolute).forEach((elem) => {
+    elem.style.display = 'none';
   });
 }
 
-function addBackground(abs) {
-  Array.from(abs).forEach((element) => {
+function addBackground(a) {
+  Array.from(a).forEach((element) => {
     element.style.position = 'absolute';
     element.style.display = 'block';
   });
 }
 
-function phone(screenSize) {
+function phone() {
   if (screenSize.matches) {
     list.style.display = 'flex';
     hamX.className = 'fa fa-bars menu-icon';
@@ -60,6 +60,6 @@ function show() {
   }
 }
 
-phone(screenSize);
+phone();
 screenSize.addListener(phone);
 hamX.addEventListener('click', show);

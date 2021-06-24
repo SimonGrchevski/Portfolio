@@ -1,9 +1,19 @@
+let modal = [];
+let cards;
+
 function Tag(tagName, classes, attr, child, value) {
   this.tagName = tagName;
   this.classes = classes;
   this.attr = attr;
   this.child = child;
   this.value = value;
+}
+function closeModal() {
+  const module = document.querySelector('.modal-wrapper');
+  module.remove();
+  module.querySelectorAll('*').forEach((elem) => {
+    elem.remove();
+  });
 }
 
 const tags = [{
@@ -23,9 +33,9 @@ const tags = [{
     new Tag('a', [], ['#'], [], 'JavaScript'),
     new Tag('li', [], [], [], ''),
     new Tag('a', [], ['#'], [], 'html'),
-    new Tag('a', ['btn-more'], [], [], 'See Project')
+    new Tag('a', ['btn-more'], [], [], 'See Project'),
   ],
-  value: ['']
+  value: [''],
 },
 {
   tagName: 'article',
@@ -44,9 +54,9 @@ const tags = [{
     new Tag('a', [], ['#'], [], 'JavaScript'),
     new Tag('li', [], [], [], ''),
     new Tag('a', [], ['#'], [], 'html'),
-    new Tag('a', ['btn-more'], [], [], 'See Project')
+    new Tag('a', ['btn-more'], [], [], 'See Project'),
   ],
-  value: ['']
+  value: [''],
 },
 {
   tagName: 'article',
@@ -65,9 +75,9 @@ const tags = [{
     new Tag('a', [], ['#'], [], 'JavaScript'),
     new Tag('li', [], [], [], ''),
     new Tag('a', [], ['#'], [], 'html'),
-    new Tag('a', ['btn-more'], [], [], 'See Project')
+    new Tag('a', ['btn-more'], [], [], 'See Project'),
   ],
-  value: ['']
+  value: [''],
 },
 {
   tagName: 'article',
@@ -86,9 +96,9 @@ const tags = [{
     new Tag('a', [], ['#'], [], 'JavaScript'),
     new Tag('li', [], [], [], ''),
     new Tag('a', [], ['#'], [], 'html'),
-    new Tag('a', ['btn-more'], [], [], 'See Project')
+    new Tag('a', ['btn-more'], [], [], 'See Project'),
   ],
-  value: ['']
+  value: [''],
 },
 {
   tagName: 'article',
@@ -107,9 +117,9 @@ const tags = [{
     new Tag('a', [], ['#'], [], 'JavaScript'),
     new Tag('li', [], [], [], ''),
     new Tag('a', [], ['#'], [], 'html'),
-    new Tag('a', ['btn-more'], [], [], 'See Project')
+    new Tag('a', ['btn-more'], [], [], 'See Project'),
   ],
-  value: ['']
+  value: [''],
 },
 {
   tagName: 'article',
@@ -128,36 +138,40 @@ const tags = [{
     new Tag('a', [], ['#'], [], 'JavaScript'),
     new Tag('li', [], [], [], ''),
     new Tag('a', [], ['#'], [], 'html'),
-    new Tag('a', ['btn-more'], [], [], 'See Project')
+    new Tag('a', ['btn-more'], [], [], 'See Project'),
   ],
-  value: ['']
+  value: [''],
 }];
 
 const cardContainer = document.querySelector('.card-container');
 
-function generateCards() {
+function display(cardId) {
+  modal.fillModalElements();
+  const newModal = modal.getModalStructure(cards[cardId]);
+  document.querySelector('main').append(newModal);
+}
 
+function generateCards() {
   const articles = [];
   tags.forEach((tag, i) => {
-
-    let article = document.createElement(tag.tagName);
+    const article = document.createElement(tag.tagName);
     article.classList.add(...tag.classes);
 
-    let childElements = [];
-    tag.child.forEach(childItem => {
-      let element = document.createElement(childItem.tagName);
-      childItem.classes.forEach(childClass => {
+    const childElements = [];
+    tag.child.forEach((childItem) => {
+      const element = document.createElement(childItem.tagName);
+      childItem.classes.forEach((childClass) => {
         element.classList.add(childClass);
       });
 
       element.href = '#';
       element.textContent = childItem.value;
 
-      if (childItem.classes[0] === 'btn-more')
-        element.addEventListener('click', function () {
+      if (childItem.classes[0] === 'btn-more') {
+        element.addEventListener('click', () => {
           display(i);
-
         });
+      }
       childElements.push(element);
     });
 
@@ -169,21 +183,20 @@ function generateCards() {
       childElements[3].append(childElements[li]);
     }
     articles.push(article);
-  })
+  });
   return articles;
 }
 
 function populateCards(cards) {
-  for (let i = 0; i < cards.length; ++i) {
-    let li = document.createElement('li');
+  for (let i = 0; i < cards.length; i += 1) {
+    const li = document.createElement('li');
     li.append(cards[i]);
     cardContainer.append(li);
   }
 }
 
-let cards = generateCards();
+cards = generateCards();
 populateCards(cards);
-
 
 modal = {
 
@@ -194,67 +207,53 @@ modal = {
     new Tag('section', ['modal-info', 'pd-tp-bt'], [], [], 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam '),
     new Tag('section', ['modal-buttons', 'flex'], [], ''),
     new Tag('a', [], ['#'], '', 'see live'),
-    new Tag('a', [], ['#'], '', 'see source')
+    new Tag('a', [], ['#'], '', 'see source'),
   ],
   unOrder: [],
 
   fillModalElements() {
-    let mainContain = new Tag('article', ['modal-container', 'modal'], [], [], '');
-    mModal = document.createElement(mainContain.tagName);
+    const mainContain = new Tag('article', ['modal-container', 'modal'], [], [], '');
+    const mModal = document.createElement(mainContain.tagName);
     mModal.classList.add(...mainContain.classes);
     this.unOrder.push(mModal);
-    this.structure.forEach(elem => {
-      let newElem = document.createElement(elem.tagName);
+    this.structure.forEach((elem) => {
+      const newElem = document.createElement(elem.tagName);
       newElem.classList.add(...elem.classes);
       newElem.textContent = elem.value;
       newElem.href = elem.attr;
 
-      if (elem.classes[0] == 'modal-close-button')
-        newElem.addEventListener('click', function () {
+      if (elem.classes[0] === 'modal-close-button') {
+        newElem.addEventListener('click', () => {
           closeModal();
-        })
+        });
+      }
 
       this.unOrder.push(newElem);
-    })
+    });
   },
 
   getModalStructure(card) {
-
-    let modalWrapper = document.createElement('div');
+    const modalWrapper = document.createElement('div');
     modalWrapper.classList.add('modal-wrapper');
     this.unOrder[4].append(this.unOrder[5], this.unOrder[6]);
 
     if (document.querySelector('.welcome').style.display === 'none') {
-      console.log('desktop');
-      let h2buttons = document.createElement('div');
+      const h2buttons = document.createElement('div');
       h2buttons.append(card.querySelector('h2').cloneNode(true), this.unOrder[4]);
       this.unOrder[0].append(
         this.unOrder[2], this.unOrder[1], h2buttons,
-        card.querySelector('ul').cloneNode(true), this.unOrder[3]);
+        card.querySelector('ul').cloneNode(true), this.unOrder[3],
+      );
     } else {
-      console.log('mob');
       this.unOrder[1].append(this.unOrder[2]);
       this.unOrder[0].append(
         this.unOrder[1], card.querySelector('h2').cloneNode(true),
-        card.querySelector('ul').cloneNode(true), this.unOrder[3], this.unOrder[4]);
+        card.querySelector('ul').cloneNode(true), this.unOrder[3], this.unOrder[4],
+      );
     }
 
     modalWrapper.append(this.unOrder[0]);
     return modalWrapper;
-  }
+  },
 
-}
-
-function display(cardId) {
-  modal.fillModalElements();
-  newModal = modal.getModalStructure(cards[cardId]);
-  document.querySelector('main').append(newModal);
-}
-
-function closeModal() {
-  let module = document.querySelector('.modal-wrapper');
-  module.remove();
-  module.querySelectorAll('*').forEach(elem => {
-    elem.remove();
-  })
-}
+};
