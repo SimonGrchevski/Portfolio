@@ -222,11 +222,30 @@ modal = {
   },
 
   getModalStructure(card) {
-    this.unOrder[1].append(this.unOrder[2]);
+    
+    
     this.unOrder[4].append(this.unOrder[5], this.unOrder[6]);
-    this.unOrder[0].append(
-      this.unOrder[1], card.querySelector('h2').cloneNode(true), card.querySelector('ul').cloneNode(true), this.unOrder[3], this.unOrder[4]);
-
+    
+    
+    
+    if (document.querySelector('.welcome').style.display === 'none') {
+      console.log('desktop');
+      let h2buttons = document.createElement('div');
+      h2buttons.append(card.querySelector('h2').cloneNode(true), this.unOrder[4]);
+      this.unOrder[0].append(
+        this.unOrder[2], this.unOrder[1], h2buttons,
+        card.querySelector('ul').cloneNode(true), this.unOrder[3], );
+    } else {
+      console.log('mob');
+      this.unOrder[1].append(this.unOrder[2]);
+      this.unOrder[0].append(
+        this.unOrder[1], card.querySelector('h2').cloneNode(true),
+        card.querySelector('ul').cloneNode(true), this.unOrder[3], this.unOrder[4]);
+    }
+      
+    
+      // console.log('here');
+      console.log(this.unOrder[0]);
     return this.unOrder[0];
   }
 
