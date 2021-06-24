@@ -223,10 +223,9 @@ modal = {
 
   getModalStructure(card) {
 
-
+    let modalWrapper = document.createElement('div');
+    modalWrapper.classList.add('modal-wrapper');
     this.unOrder[4].append(this.unOrder[5], this.unOrder[6]);
-
-
 
     if (document.querySelector('.welcome').style.display === 'none') {
       console.log('desktop');
@@ -243,10 +242,8 @@ modal = {
         card.querySelector('ul').cloneNode(true), this.unOrder[3], this.unOrder[4]);
     }
 
-
-    // console.log('here');
-    console.log(this.unOrder[0]);
-    return this.unOrder[0];
+    modalWrapper.append(this.unOrder[0]);
+    return modalWrapper;
   }
 
 }
@@ -258,7 +255,7 @@ function display(cardId) {
 }
 
 function closeModal() {
-  let module = document.querySelector(".modal-container");
+  let module = document.querySelector(".modal-wrapper");
   module.remove();
   module.querySelectorAll("*").forEach(elem => {
     elem.remove();
