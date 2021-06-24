@@ -1,128 +1,128 @@
-let tags = [{
-  tagName: "article",
-  classes: ["card", "flex", "column", "width100"],
-  attr: [""],
+const tags = [{
+  tagName: 'article',
+  classes: ['card', 'flex', 'column', 'width100'],
+  attr: [''],
   child: [
-    new Tag("div", ["card-image", "width100", "height50"], [], [], ""),
-    new Tag("section", ["img-info", "flex", "column", "height50"], [], [], ""),
-    new Tag("h2", [], [], [], "Multi-Post Stories Gain+Glory"),
-    new Tag("ul", ["flex", "ul-skills"], [], [], ""),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "Ruby"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "CSS"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "JavaScript"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "html"),
-    new Tag("a", ["btn-more"], [], [], "See Project")
+    new Tag('div', ['card-image', 'width100', 'height50'], [], [], ''),
+    new Tag('section', ['img-info', 'flex', 'column', 'height50'], [], [], ''),
+    new Tag('h2', [], [], [], 'Multi-Post Stories Gain+Glory'),
+    new Tag('ul', ['flex', 'ul-skills'], [], [], ''),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'Ruby'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'CSS'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'JavaScript'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'html'),
+    new Tag('a', ['btn-more'], [], [], 'See Project')
   ],
-  value: [""]
+  value: ['']
 },
 {
-  tagName: "article",
-  classes: ["card", "flex", "column", "width100"],
-  attr: [""],
+  tagName: 'article',
+  classes: ['card', 'flex', 'column', 'width100'],
+  attr: [''],
   child: [
-    new Tag("div", ["card-image", "width100", "height50"], [], [], ""),
-    new Tag("section", ["img-info", "flex", "column", "height50"], [], [], ""),
-    new Tag("h2", [], [], [], "Multi-Post Stories Gain+Glory"),
-    new Tag("ul", ["flex", "ul-skills"], [], [], ""),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "Ruby"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "CSS"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "JavaScript"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "html"),
-    new Tag("a", ["btn-more"], [], [], "See Project")
+    new Tag('div', ['card-image', 'width100', 'height50'], [], [], ''),
+    new Tag('section', ['img-info', 'flex', 'column', 'height50'], [], [], ''),
+    new Tag('h2', [], [], [], 'Multi-Post Stories Gain+Glory'),
+    new Tag('ul', ['flex', 'ul-skills'], [], [], ''),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'Ruby'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'CSS'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'JavaScript'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'html'),
+    new Tag('a', ['btn-more'], [], [], 'See Project')
   ],
-  value: [""]
+  value: ['']
 },
 {
-  tagName: "article",
-  classes: ["card", "flex", "column", "width100"],
-  attr: [""],
+  tagName: 'article',
+  classes: ['card', 'flex', 'column', 'width100'],
+  attr: [''],
   child: [
-    new Tag("div", ["card-image", "width100", "height50"], [], [], ""),
-    new Tag("section", ["img-info", "flex", "column", "height50"], [], [], ""),
-    new Tag("h2", [], [], [], "Multi-Post Stories Gain+Glory"),
-    new Tag("ul", ["flex", "ul-skills"], [], [], ""),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "Ruby"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "CSS"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "JavaScript"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "html"),
-    new Tag("a", ["btn-more"], [], [], "See Project")
+    new Tag('div', ['card-image', 'width100', 'height50'], [], [], ''),
+    new Tag('section', ['img-info', 'flex', 'column', 'height50'], [], [], ''),
+    new Tag('h2', [], [], [], 'Multi-Post Stories Gain+Glory'),
+    new Tag('ul', ['flex', 'ul-skills'], [], [], ''),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'Ruby'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'CSS'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'JavaScript'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'html'),
+    new Tag('a', ['btn-more'], [], [], 'See Project')
   ],
-  value: [""]
+  value: ['']
 },
 {
-  tagName: "article",
-  classes: ["card", "flex", "column", "width100"],
-  attr: [""],
+  tagName: 'article',
+  classes: ['card', 'flex', 'column', 'width100'],
+  attr: [''],
   child: [
-    new Tag("div", ["card-image", "width100", "height50"], [], [], ""),
-    new Tag("section", ["img-info", "flex", "column", "height50"], [], [], ""),
-    new Tag("h2", [], [], [], "Multi-Post Stories Gain+Glory"),
-    new Tag("ul", ["flex", "ul-skills"], [], [], ""),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "Ruby"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "CSS"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "JavaScript"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "html"),
-    new Tag("a", ["btn-more"], [], [], "See Project")
+    new Tag('div', ['card-image', 'width100', 'height50'], [], [], ''),
+    new Tag('section', ['img-info', 'flex', 'column', 'height50'], [], [], ''),
+    new Tag('h2', [], [], [], 'Multi-Post Stories Gain+Glory'),
+    new Tag('ul', ['flex', 'ul-skills'], [], [], ''),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'Ruby'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'CSS'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'JavaScript'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'html'),
+    new Tag('a', ['btn-more'], [], [], 'See Project')
   ],
-  value: [""]
+  value: ['']
 },
 {
-  tagName: "article",
-  classes: ["card", "flex", "column", "width100"],
-  attr: [""],
+  tagName: 'article',
+  classes: ['card', 'flex', 'column', 'width100'],
+  attr: [''],
   child: [
-    new Tag("div", ["card-image", "width100", "height50"], [], [], ""),
-    new Tag("section", ["img-info", "flex", "column", "height50"], [], [], ""),
-    new Tag("h2", [], [], [], "Multi-Post Stories Gain+Glory"),
-    new Tag("ul", ["flex", "ul-skills"], [], [], ""),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "Ruby"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "CSS"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "JavaScript"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "html"),
-    new Tag("a", ["btn-more"], [], [], "See Project")
+    new Tag('div', ['card-image', 'width100', 'height50'], [], [], ''),
+    new Tag('section', ['img-info', 'flex', 'column', 'height50'], [], [], ''),
+    new Tag('h2', [], [], [], 'Multi-Post Stories Gain+Glory'),
+    new Tag('ul', ['flex', 'ul-skills'], [], [], ''),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'Ruby'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'CSS'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'JavaScript'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'html'),
+    new Tag('a', ['btn-more'], [], [], 'See Project')
   ],
-  value: [""]
+  value: ['']
 },
 {
-  tagName: "article",
-  classes: ["card", "flex", "column", "width100"],
-  attr: [""],
+  tagName: 'article',
+  classes: ['card', 'flex', 'column', 'width100'],
+  attr: [''],
   child: [
-    new Tag("div", ["card-image", "width100", "height50"], [], [], ""),
-    new Tag("section", ["img-info", "flex", "column", "height50"], [], [], ""),
-    new Tag("h2", [], [], [], "Multi-Post Stories Gain+Glory"),
-    new Tag("ul", ["flex", "ul-skills"], [], [], ""),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "Ruby"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "CSS"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "JavaScript"),
-    new Tag("li", [], [], [], ""),
-    new Tag("a", [], ["#"], [], "html"),
-    new Tag("a", ["btn-more"], [], [], "See Project")
+    new Tag('div', ['card-image', 'width100', 'height50'], [], [], ''),
+    new Tag('section', ['img-info', 'flex', 'column', 'height50'], [], [], ''),
+    new Tag('h2', [], [], [], 'Multi-Post Stories Gain+Glory'),
+    new Tag('ul', ['flex', 'ul-skills'], [], [], ''),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'Ruby'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'CSS'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'JavaScript'),
+    new Tag('li', [], [], [], ''),
+    new Tag('a', [], ['#'], [], 'html'),
+    new Tag('a', ['btn-more'], [], [], 'See Project')
   ],
-  value: [""]
+  value: ['']
 }];
 
 function Tag(tagName, classes, attr, child, value) {
@@ -133,7 +133,7 @@ function Tag(tagName, classes, attr, child, value) {
   this.value = value;
 }
 
-const cardContainer = document.querySelector(".card-container");
+const cardContainer = document.querySelector('.card-container');
 
 function generateCards() {
 
@@ -151,10 +151,10 @@ function generateCards() {
         element.classList.add(childClass);
       });
 
-      element.href = "#";
+      element.href = '#';
       element.textContent = childItem.value;
 
-      if (childItem.classes[0] === "btn-more")
+      if (childItem.classes[0] === 'btn-more')
         element.addEventListener('click', function () {
           display(i);
 
@@ -190,17 +190,17 @@ modal = {
 
   mModal: [],
   structure: [
-    new Tag("section", ["modal-picture"], [], [], ""),
-    new Tag("a", ["modal-close-button"], ["#"], "", "X"),
-    new Tag("section", ["modal-info", "pd-tp-bt"], [], [], "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam "),
-    new Tag("section", ["modal-buttons", "flex"], [], ""),
-    new Tag("a", [], ["#"], "", "see live"),
-    new Tag("a", [], ["#"], "", "see source")
+    new Tag('section', ['modal-picture'], [], [], ''),
+    new Tag('a', ['modal-close-button'], ['#'], '', 'X'),
+    new Tag('section', ['modal-info', 'pd-tp-bt'], [], [], 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam '),
+    new Tag('section', ['modal-buttons', 'flex'], [], ''),
+    new Tag('a', [], ['#'], '', 'see live'),
+    new Tag('a', [], ['#'], '', 'see source')
   ],
   unOrder: [],
 
   fillModalElements() {
-    let mainContain = new Tag("article", ["modal-container", "modal"], [], [], "");
+    let mainContain = new Tag('article', ['modal-container', 'modal'], [], [], '');
     mModal = document.createElement(mainContain.tagName);
     mModal.classList.add(...mainContain.classes);
     this.unOrder.push(mModal);
@@ -210,7 +210,7 @@ modal = {
       newElem.textContent = elem.value;
       newElem.href = elem.attr;
 
-      if (elem.classes[0] == "modal-close-button")
+      if (elem.classes[0] == 'modal-close-button')
         newElem.addEventListener('click', function () {
           closeModal();
         })
@@ -249,13 +249,13 @@ modal = {
 function display(cardId) {
   modal.fillModalElements();
   newModal = modal.getModalStructure(cards[cardId]);
-  document.querySelector("main").append(newModal);
+  document.querySelector('main').append(newModal);
 }
 
 function closeModal() {
-  let module = document.querySelector(".modal-wrapper");
+  let module = document.querySelector('.modal-wrapper');
   module.remove();
-  module.querySelectorAll("*").forEach(elem => {
+  module.querySelectorAll('*').forEach(elem => {
     elem.remove();
   })
 }
