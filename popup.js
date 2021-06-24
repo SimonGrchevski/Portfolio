@@ -138,7 +138,8 @@ const cardContainer = document.querySelector(".card-container");
 function generateCards() {
 
   let articles = [];
-  tags.forEach(tag => {
+  let click = 1;
+  tags.forEach((tag, i) => {
 
     let article = document.createElement(tag.tagName);
     article.classList.add(...tag.classes);
@@ -149,8 +150,15 @@ function generateCards() {
       childItem.classes.forEach(childClass => {
         element.classList.add(childClass);
       });
+
+      element.href = "#";
       element.textContent = childItem.value;
-      element.href = childItem.attr;
+
+      if (childItem.classes[0] === "btn-more")
+        element.addEventListener('click', function () {
+          display(i);
+
+        });
       childElements.push(element);
     });
 
@@ -176,3 +184,65 @@ function populateCards(cards) {
 
 let cards = generateCards();
 populateCards(cards);
+
+
+modal = {
+  //maybe other type
+  mModal: [],
+  structure: [
+    new Tag("section", ["modal-picture"], [], [], ""),
+    new Tag("a", ["modal-close-button"], ["#"], "", "X"),
+    // take the title h2
+    // take the links
+    new Tag("section", ["modal-info", "pd-tp-bt"], [], [], "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit quis provident dicta qui sapiente aperiam "),
+    new Tag("section", ["modal-buttons", "flex"], [], ""),
+    new Tag("a", [], ["#"], "", "see live"),
+    new Tag("a", [], ["#"], "", "see source")
+  ],
+  unOrder: [],
+
+  fillModalElements() {
+    let mainContain = new Tag("article", ["modal-container", "modal"], [], [], "");
+    mModal = document.createElement(mainContain.tagName);
+    mModal.classList.add(...mainContain.classes);
+    this.unOrder.push(mModal);
+    this.structure.forEach(elem => {
+      let newElem = document.createElement(elem.tagName);
+      newElem.classList.add(...elem.classes);
+      newElem.textContent = elem.value;
+      newElem.href = elem.attr;
+
+      if (elem.classes[0] == "modal-close-button")
+        newElem.addEventListener('click', function () {
+          closeModal();
+        })
+
+      this.unOrder.push(newElem);
+    })
+  },
+
+  getModalStructure(card) {
+    this.unOrder[1].append(this.unOrder[2]);
+    this.unOrder[4].append(this.unOrder[5], this.unOrder[6]);
+    this.unOrder[0].append(
+      this.unOrder[1], card.querySelector('h2').cloneNode(true), card.querySelector('ul').cloneNode(true), this.unOrder[3], this.unOrder[4]);
+
+    return this.unOrder[0];
+  }
+
+}
+
+function display(cardId) {
+  modal.fillModalElements();
+  newModal = modal.getModalStructure(cards[cardId]);
+  console.log(newModal);
+  document.querySelector("main").append(newModal);
+}
+
+function closeModal() {
+  let module = document.querySelector(".modal-container");
+  module.remove();
+  module.querySelectorAll("*").forEach(elem => {
+    elem.remove();
+  })
+}
