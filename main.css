@@ -527,7 +527,7 @@ footer {
   .modal-wrapper{
     content: '';
     width: 100vw;
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 100vh;
     backdrop-filter: blur(10px);
