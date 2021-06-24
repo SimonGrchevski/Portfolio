@@ -254,7 +254,6 @@ modal = {
 function display(cardId) {
   modal.fillModalElements();
   newModal = modal.getModalStructure(cards[cardId]);
-  console.log(newModal);
   document.querySelector("main").append(newModal);
 }
 
