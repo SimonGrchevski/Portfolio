@@ -462,6 +462,7 @@ footer {
   overflow: auto;
   z-index: 1000000;
   background-color: #fff;
+  scrollbar-width: none;
 }
 .modal-container h2 {
   font-size: 32px;
@@ -499,6 +500,7 @@ footer {
   font-weight: 400;
   font-size: 16px;
   color: #344563;
+  height: auto;
 }
 
 .modal-buttons {
