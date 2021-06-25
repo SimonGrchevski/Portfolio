@@ -767,3 +767,29 @@ footer {
     width: 100%;
   }
 }
+
+#msg {
+
+  padding: 2px;
+  display: block;
+  color: white;
+  width: 50%;
+  margin: 5px auto;
+  border-radius: 8px;
+} 
+.success {
+  background-color: green;
+  color: white;
+}
+
+.fail {
+  background-color: red;
+}
+
+form input.success{
+  border-color: green;
+}
+
+form input.error {
+  border-color: red;
+}
