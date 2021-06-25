@@ -4,9 +4,16 @@
 The new feature is the mobile menu that **cover the whole** page when *clicked* on it using javascript
 and improved the structure of the page.
 
+## Popup-window project
+    Dynamically placing the card elements using JS and give to the 
+    buttons an click event, when clicked the new popup-window appear
+    with the information about the project.
+
 ![Screenshot](./ScreenShot1.png)
 
 ![Screenshot](./ScreenShot2.png)
+
+![Screenshot](./Screenshot3.png)
 
 ## Built With HTML5, CSS, Javascript
 
