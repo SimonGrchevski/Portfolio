@@ -1,7 +1,7 @@
 const form = document.getElementById('get-in-touch-form');
-const nameField = form.elements['name'];
-const emailField = form.elements['email'];
-const textField = form.elements['message'];
+const nameField = form.elements.name;
+const emailField = form.elements.email;
+const textField = form.elements.message;
 const msgElem = document.getElementById('msg');
 let userData = {};
 const eSuccess = 0;
@@ -11,10 +11,14 @@ const eventInfo = [
   { cl: 'fail', msg: 'The email input must be in lower case' },
 ];
 
-function UserData(name = '', email = '', area='') {
+function UserData(name = '', email = '', area = '') {
   this.name = name;
   this.email = email;
   this.area = area;
+}
+
+function updataLocalStorage() {
+  localStorage.setItem('user', JSON.stringify(userData));
 }
 
 function storageAvailable(type) {
@@ -50,21 +54,17 @@ function validEmail() {
 }
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
   if (validEmail()) {
     displayResponse(eventInfo[eSuccess]);
   } else {
     displayResponse(eventInfo[eFailure]);
+    e.preventDefault();
   }
 });
 
-[emailField,nameField,textField].forEach((elem) => {
-  elem.addEventListener('change', function () {
+[emailField, nameField, textField].forEach((elem) => {
+  elem.addEventListener('change', () => {
     userData = new UserData(nameField.value, emailField.value, textField.value);
     updataLocalStorage();
   });
 });
-
-function updataLocalStorage() {
-  localStorage.setItem('user', JSON.stringify(userData));
-}
