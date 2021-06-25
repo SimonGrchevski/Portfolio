@@ -163,22 +163,20 @@
           </h2>
         </header>
 
-        <form action="https://formspree.io/f/mknkbnjp" method="POST">
+        <form action="https://formspree.io/f/mknkbnjp" method="POST" id="get-in-touch-form">
           <ul>
             <li>
-              <input type="text" name="name" maxlength="30" placeholder="Full name" required>
+              <input type="text" name="name" placeholder="Full name">
             </li>
-
-
-            <li><input type="email" name="email" placeholder="Email address" required>
+            <li>
+              <input name="email" placeholder="Email address">
+            </li>
+            <li>
+              <textarea name="message" placeholder="Enter text here" required></textarea>
             </li>
 
             <li>
-              <textarea name="message" maxlength="500" cols="30" rows="10" placeholder="Enter text here"
-                required></textarea>
-            </li>
-
-            <li>
+              <p id="msg"></p>
               <button type="submit" class="submit">Get in touch</button>
             </li>
           </ul>
@@ -211,6 +209,7 @@
   </script>
   <script src="script.js"></script>
   <script src="popup.js"></script>
+  <script src="validation-form.js"></script>
 </body>
 
 </html>

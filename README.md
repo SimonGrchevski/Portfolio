@@ -9,6 +9,10 @@ and improved the structure of the page.
     buttons an click event, when clicked the new popup-window appear
     with the information about the project.
 
+## Form-validation project
+    When the form is submited, check with JS if the input is correct
+    and display the response near the button
+
 ![Screenshot](./ScreenShot1.png)
 
 ![Screenshot](./ScreenShot2.png)
