@@ -769,14 +769,14 @@ footer {
 }
 
 #msg {
-
   padding: 2px;
   display: block;
   color: white;
   width: 70%;
   margin: 5px auto;
   border-radius: 8px;
-} 
+}
+
 .success {
   background-color: green;
   color: white;
@@ -786,7 +786,7 @@ footer {
   background-color: red;
 }
 
-form input.success{
+form input.success {
   border-color: green;
 }
 
