@@ -22,9 +22,7 @@ form.addEventListener('submit', (e) => {
 
     if (validEmail()) {
         displayResponse(eventInfo[eSuccess])
-        e.preventDefault();
     }
-
     else {
         displayResponse(eventInfo[eFailure])
         e.preventDefault();
