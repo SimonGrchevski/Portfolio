@@ -50,10 +50,10 @@ function displayResponse(eInfo) {
 }
 
 function validEmail() {
-  return (/^[^A-Z]*$/).test(emailField.value);
+  return (/^[^a-z]*$/).test(emailField.value);
 }
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('onsubmit', (e) => {
   if (validEmail()) {
     displayResponse(eventInfo[eSuccess]);
   } else {
@@ -63,8 +63,8 @@ form.addEventListener('submit', (e) => {
 });
 
 [emailField, nameField, textField].forEach((elem) => {
-  elem.addEventListener('change', () => {
-    userData = new UserData(nameField.value, emailField.value, textField.value);
+  elem.addEventListener('onchange', () => {
+    userData = new UserData(nameField, emailField.value, textField.value);
     updataLocalStorage();
   });
 });

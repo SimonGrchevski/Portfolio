@@ -13,6 +13,10 @@ and improved the structure of the page.
     When the form is submited, check with JS if the input is correct
     and display the response near the button
 
+## Local-storage project
+    On change save the input of the form elements in the local storage
+    and place them in the inputs when reload the page.
+
 ![Screenshot](./ScreenShot1.png)
 
 ![Screenshot](./ScreenShot2.png)
